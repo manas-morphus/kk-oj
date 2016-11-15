@@ -8,8 +8,7 @@
 <title>ODIA JODI</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<meta name="keywords" content="Marital Responsive web template, Bootstrap Web Templates, Flat Web Templates, Andriod Compatible web template, 
-Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyErricsson, Motorola web design" />
+<meta name="keywords" content="Marital" />
 <script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
 <link href='<c:url value="/css/bootstrap-3.1.1.min.css"/>' rel='stylesheet' type='text/css' />
 <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
@@ -118,7 +117,7 @@ $(document).ready(function(){
 <div class="banner">
   <div class="container">
     <div class="banner_info">
-      <h3>Find Your Jodi Forever</h3>
+      <h3>The real matcher</h3>
       <a href="view_profile.html" class="hvr-shutter-out-horizontal">Create your Profile</a>
     </div>
   </div>
@@ -548,7 +547,7 @@ $(document).ready(function(){
     		</div>
     		<div class="clearfix"> </div>
     		<div class="copy">
-		      <p>Copyright © 2015 Marital . All Rights Reserved  | Design by <a href="http://w3layouts.com/" target="_blank"> </a> </p>
+		      <p>Copyright © 2016  <a href="http://odiajodi.com/" target="_blank">odiajodi.com</a> </p>
 	        </div>
     	</div>
     </div>

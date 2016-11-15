@@ -17,4 +17,16 @@ public class HomeController {
 		model.setViewName("index");
 		return model;
 	}
+	@RequestMapping(value="/about" ,method=RequestMethod.GET)
+	public ModelAndView loadAboutPage(final HttpServletRequest request,final HttpServletResponse response)throws Exception{
+		ModelAndView model=new ModelAndView();
+		model.setViewName("about");
+		return model;
+	}
+	@RequestMapping(value="/contact" ,method=RequestMethod.GET)
+	public ModelAndView loadContactPage(final HttpServletRequest request,final HttpServletResponse response)throws Exception{
+		ModelAndView model=new ModelAndView();
+		model.setViewName("contact");
+		return model;
+	}
 }

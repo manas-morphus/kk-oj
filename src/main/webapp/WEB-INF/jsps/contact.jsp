@@ -1,25 +1,25 @@
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
     pageEncoding="ISO-8859-1"%>
-<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%> 
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>  
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
 <html>
 <head>
-<title>Marital an Wedding Category Flat Bootstarp Resposive Website Template | Login :: w3layouts</title>
+<title>ODIA JODI</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<meta name="keywords" content="Marital Responsive web template, Bootstrap Web Templates, Flat Web Templates, Andriod Compatible web template, 
-Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyErricsson, Motorola web design" />
+<meta name="keywords" content="Marital" />
 <script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
-<link href="css/bootstrap-3.1.1.min.css" rel='stylesheet' type='text/css' />
+<link href='<c:url value="/css/bootstrap-3.1.1.min.css"/>' rel='stylesheet' type='text/css' />
 <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-<script src="js/jquery.min.js"></script>
-<script src="js/bootstrap.min.js"></script>
+<script src='<c:url value="/js/jquery.min.js"/>'></script>
+<script src='<c:url value="/js/bootstrap.min.js"/>'></script>
 <!-- Custom Theme files -->
-<link href="css/style.css" rel='stylesheet' type='text/css' />
+<link href='<c:url value="/css/style.css"/>' rel='stylesheet' type='text/css' />
 <link href='//fonts.googleapis.com/css?family=Oswald:300,400,700' rel='stylesheet' type='text/css'>
 <link href='//fonts.googleapis.com/css?family=Ubuntu:300,400,500,700' rel='stylesheet' type='text/css'>
 <!----font-Awesome----->
-<link href="css/font-awesome.css" rel="stylesheet"> 
+<link href='<c:url value="/css/font-awesome.css"/>' rel="stylesheet"> 
 <!----font-Awesome----->
 <script>
 $(document).ready(function(){
@@ -56,7 +56,7 @@ $(document).ready(function(){
 			   </ul>
              </nav>
            </div>
-           <a class="brand" href="index.html"><img src="images/logo.png" alt="logo"></a>
+           <a class="brand" href="index.html"><img src='<c:url value="/images/logo-oj.gif"/>' alt="logo"></a>
            <div class="pull-right">
           	<nav class="navbar nav_bottom" role="navigation">
  
@@ -121,36 +121,46 @@ $(document).ready(function(){
      <ul>
         <a href="index.html"><i class="fa fa-home home_1"></i></a>
         <span class="divider">&nbsp;|&nbsp;</span>
-        <li class="current-page">Login</li>
+        <li class="current-page">Contact</li>
      </ul>
    </div>
-   <div class="services">
-   	  <div class="col-sm-6 login_left">
-	   <form action='<c:url value="/validateUser"/>' method="post">
-  	    <div class="form-item form-type-textfield form-item-name">
-	      <label for="edit-name">Username <span class="form-required" title="This field is required.">*</span></label>
-	      <input type="text" id="edit-name" name="username" value="" size="60" maxlength="60" class="form-text required">
-	    </div>
-	    <div class="form-item form-type-password form-item-pass">
-	      <label for="edit-pass">Password <span class="form-required" title="This field is required.">*</span></label>
-	      <input type="password" id="edit-pass" name="password" size="60" maxlength="128" class="form-text required">
-	    </div>
-	    <div class="form-actions">
-	    	<input type="submit" id="edit-submit" name="op" value="Log in" class="btn_1 submit">
-	    </div>
-	   </form>
-	  </div>
-	  <div class="col-sm-6">
-	    <ul class="sharing">
-			<li><a href="#" class="facebook" title="Facebook"><i class="fa fa-boxed fa-fw fa-facebook"></i> Share on Facebook</a></li>
-		  	<li><a href="#" class="twitter" title="Twitter"><i class="fa fa-boxed fa-fw fa-twitter"></i> Tweet</a></li>
-		  	<li><a href="#" class="google" title="Google"><i class="fa fa-boxed fa-fw fa-google-plus"></i> Share on Google+</a></li>
-		  	<li><a href="#" class="linkedin" title="Linkedin"><i class="fa fa-boxed fa-fw fa-linkedin"></i> Share on LinkedIn</a></li>
-		  	<li><a href="#" class="mail" title="Email"><i class="fa fa-boxed fa-fw fa-envelope-o"></i> E-mail</a></li>
-		</ul>
-	  </div>
-	  <div class="clearfix"> </div>
+   <div class="grid_5">
+      <p>Praesent vestibulum molestie lacus. Aenean nonummy hendrerit mauris. Phasellus porta. Fusce suscipit varius mi. Cum sociis natoque penatibus et magnis dis parturient. montes, nascetur ridiculus mus. Nulla dui. Fusce feugiat malesuada odio. Morbi nunc odio, gravida at, cursus nec, luctus a, lorem. Maecenas tristique orci ac sem. Duis ultricies pharetra magna. Donec accumsan malesuada orci. Donec sit amet eros. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Mauris fermentum dictum magna. Sed laoreet aliquam leo. Ut tellus dolor, dapibus eget, elementum vel, cursus eleifend, elit.</p>
+      <address class="addr row">
+        <dl class="grid_4">
+            <dt>Address :</dt>
+            <dd>
+                8901 Nulla Pariatur, <br>
+                Ipsum, D05 87GR.
+            </dd>
+        </dl>
+        <dl class="grid_4">
+            <dt>Telephones :</dt>
+            <dd>
+                +1 800 245 4578 <br>
+                +1 800 789 5478
+            </dd>
+        </dl>
+        <dl class="grid_4">
+            <dt>E-mail :</dt>
+            <dd><a href="malito:mail@demolink.org">mail(at)Marital.com</a></dd>
+        </dl>
+      </address>
+    </div>
    </div>
+</div>
+<div class="about_middle">
+  <div class="container">
+	 <h2>Contact Form</h2>
+	  <form id="contact-form" class="contact-form">
+        <fieldset>
+          <input type="text" class="text" placeholder="" value="Name" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Name';}">
+          <input type="text" class="text" placeholder="" value="Phone" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Phone';}">
+          <input type="text" class="text" placeholder="" value="Email" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Email';}">
+          <textarea value="Message" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Message';}">Message</textarea>
+          <input name="submit" type="submit" id="submit" value="Submit">
+        </fieldset>
+      </form>
   </div>
 </div>
 <!-- <div class="map">
