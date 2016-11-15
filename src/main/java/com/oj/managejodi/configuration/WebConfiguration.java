@@ -31,8 +31,8 @@ public class WebConfiguration extends WebMvcConfigurerAdapter{
 	}
 	
 	public void addResourceHandlers(final ResourceHandlerRegistry registry){
-		registry.addResourceHandler("/css/**","/images/**","/js/**")
-		.addResourceLocations("/css/","/images/","/js/")
+		registry.addResourceHandler("/css/**","/images/**","/js/**","/fonts/**")
+		.addResourceLocations("/css/","/images/","/js/","/fonts/")
 		.setCachePeriod(14400);
 	}
 

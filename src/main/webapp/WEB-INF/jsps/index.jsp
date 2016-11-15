@@ -57,7 +57,7 @@ $(document).ready(function(){
 			   </ul>
              </nav>
            </div>
-           <a class="brand" href="index.html"><img src="/images/logo-oj.gif" alt="logo"></a>
+           <a class="brand" href="index.html"><img src='<c:url value="/images/logo-oj.gif"/>'  alt="logo"></a>
            <div class="pull-right">
           	<nav class="navbar nav_bottom" role="navigation">
             <!-- Brand and toggle get grouped for better mobile display -->
@@ -75,7 +75,7 @@ $(document).ready(function(){
 		        <ul class="nav navbar-nav nav_1">
 		            <li><a href="index.html">Home</a></li>
 		            <li><a href="about.html">About</a></li>
-		    		<li class="dropdown">
+		    		<!-- <li class="dropdown">
 		              <a href="#" class="dropdown-toggle" data-toggle="dropdown">Matches<span class="caret"></span></a>
 		              <ul class="dropdown-menu" role="menu">
 		                <li><a href="matches.html">New Matches</a></li>
@@ -104,7 +104,7 @@ $(document).ready(function(){
 		                <li><a href="sent.html">Sent</a></li>
 		                <li><a href="upgrade.html">Upgrade</a></li>
 		              </ul>
-		            </li>
+		            </li> -->
 		            <li class="last"><a href="contact.html">Contacts</a></li>
 		        </ul>
 		     </div><!-- /.navbar-collapse -->
@@ -118,7 +118,7 @@ $(document).ready(function(){
 <div class="banner">
   <div class="container">
     <div class="banner_info">
-      <h3>Millions of verified Members</h3>
+      <h3>Find Your Jodi Forever</h3>
       <a href="view_profile.html" class="hvr-shutter-out-horizontal">Create your Profile</a>
     </div>
   </div>
@@ -141,11 +141,12 @@ $(document).ready(function(){
 			<div class="age_box1" style="max-width: 100%; display: inline-block;">
 				<select>
 					<option value="">* Select State</option>
-					<option value="Washington">Washington</option>
-					<option value="Texas">Texas</option>
-					<option value="Georgia">Georgia</option>
-					<option value="Virginia">Virginia</option>
-					<option value="Colorado">Colorado</option>
+					<option value="odisha">Odisha</option>
+					<option value="karnattak">Karnattak</option>
+					<option value="westbengal">West Bengal</option>
+					<option value="andrapradesh">Andra Pradesh</option>
+					<option value="bihar">Bihar</option>
+					<option value="jharkhand">Jharkhand</option>
                </select>
           </div>
         </div>
