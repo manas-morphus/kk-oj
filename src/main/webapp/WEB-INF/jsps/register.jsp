@@ -7,8 +7,7 @@
 <title>ODIA JODI</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<meta name="keywords" content="Marital Responsive web template, Bootstrap Web Templates, Flat Web Templates, Andriod Compatible web template, 
-Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyErricsson, Motorola web design" />
+<meta name="keywords" content="Marital" />
 <script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
 <link href="css/bootstrap-3.1.1.min.css" rel='stylesheet' type='text/css' />
 <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
@@ -48,9 +47,9 @@ $(document).ready(function(){
 				<li class="green">
 				  <a href="#" class="icon-home"></a>
 				  <ul>
-					<li><a href="login.html">Login</a></li>
-					<li><a href="register.html">Register</a></li>
-					<li><a href="index.html">Logout</a></li>
+					<li><a href="login">Login</a></li>
+					<li><a href="register">Register</a></li>
+					<li><a href="index">Logout</a></li>
 				  </ul>
 				</li>
 			   </ul>
@@ -128,19 +127,27 @@ $(document).ready(function(){
    	  <div class="col-sm-6 login_left">
 	     <form>
 	  	    <div class="form-group">
-		      <label for="edit-name">Username <span class="form-required" title="This field is required.">*</span></label>
+		      <label for="edit-name">Name <span class="form-required" title="This field is required.">*</span></label>
 		      <input type="text" id="edit-name" name="name" value="" size="60" maxlength="60" class="form-text required">
 		    </div>
 		    <div class="form-group">
-		      <label for="edit-pass">Password <span class="form-required" title="This field is required.">*</span></label>
-		      <input type="password" id="edit-pass" name="pass" size="60" maxlength="128" class="form-text required">
+		      <label for="edit-name">Fathers Name <span class="form-required" title="This field is required.">*</span></label>
+		      <input type="text" id="edit-name" name="name" value="" size="60" maxlength="60" class="form-text required">
 		    </div>
 		    <div class="form-group">
 		      <label for="edit-name">Email <span class="form-required" title="This field is required.">*</span></label>
 		      <input type="text" id="edit-name" name="name" value="" size="60" maxlength="60" class="form-text required">
 		    </div>
+		     <div class="form-group">
+		      <label for="edit-name">Mobile Number<span class="form-required" title="This field is required.">*</span></label>
+		      <input type="text" id="edit-name" name="name" value="" size="60" maxlength="60" class="form-text required">
+		    </div>
+		     <div class="form-group">
+		      <label for="edit-name">Address<span class="form-required" title="This field is required.">*</span></label>
+		      <textarea class="form-control bio" placeholder="" rows="3"></textarea>
+		    </div>
 		    <div class="age_select">
-		      <label for="edit-pass">Age <span class="form-required" title="This field is required.">*</span></label>
+		      <label for="edit-pass">DOB<span class="form-required" title="This field is required.">*</span></label>
 		        <div class="age_grid">
 		         <div class="col-sm-4 form_box">
                   <div class="select-block1">
@@ -239,6 +246,8 @@ $(document).ready(function(){
 	                    <option value="">2013</option>
 	                    <option value="">2014</option>
 	                    <option value="">2015</option>
+	                    <option value="">2016</option>
+	                    <option value="">2017</option>
                     </select>
                    </div>
                   </div>
@@ -259,9 +268,65 @@ $(document).ready(function(){
                 </div>
                 <div class="clearfix"> </div>
              </div>
-			  <div class="form-group">
+			  <!-- <div class="form-group">
 			     <label for="edit-name">Subject <span class="form-required" title="This field is required.">*</span></label>
 				 <textarea class="form-control bio" placeholder="" rows="3"></textarea>
+			  </div> -->
+			  <div class="form-group">
+		      <label for="edit-name">Height<span class="form-required" title="This field is required.">*</span></label>
+		      <input type="text" id="edit-name" name="name" value="" size="60" maxlength="60" class="form-text required">
+		    </div>
+		     <div class="form-group">
+		      <label for="edit-name">Weight<span class="form-required" title="This field is required.">*</span></label>
+		      <input type="text" id="edit-name" name="name" value="" size="60" maxlength="60" class="form-text required">
+		    </div>
+		     <div class="form-group">
+		      <label for="edit-name">Color<span class="form-required" title="This field is required.">*</span></label>
+		      <input type="text" id="edit-name" name="name" value="" size="60" maxlength="60" class="form-text required">
+		    </div>
+		     <div class="form-group">
+		      <label for="edit-name">Hair Style<span class="form-required" title="This field is required.">*</span></label>
+		      <input type="text" id="edit-name" name="name" value="" size="60" maxlength="60" class="form-text required">
+		    </div>
+		     <div class="form-group">
+		      <label for="edit-name">Eye<span class="form-required" title="This field is required.">*</span></label>
+		      <input type="text" id="edit-name" name="name" value="" size="60" maxlength="60" class="form-text required">
+		    </div>
+		     <div class="form-group">
+		      <label for="edit-name">Father/Mother Occupation<span class="form-required" title="This field is required.">*</span></label>
+		      <input type="text" id="edit-name" name="name" value="" size="60" maxlength="60" class="form-text required">
+		    </div>
+		     <div class="form-group">
+		      <label for="edit-name">Siblings and their marital status<span class="form-required" title="This field is required.">*</span></label>
+		      <input type="text" id="edit-name" name="name" value="" size="60" maxlength="60" class="form-text required">
+		    </div>
+		    <div class="form-group">
+		      <label for="edit-name">Qualification<span class="form-required" title="This field is required.">*</span></label>
+		      <input type="text" id="edit-name" name="name" value="" size="60" maxlength="60" class="form-text required">
+		    </div>
+		    <div class="form-group">
+		      <label for="edit-name">Occupation<span class="form-required" title="This field is required.">*</span></label>
+		      <input type="text" id="edit-name" name="name" value="" size="60" maxlength="60" class="form-text required">
+		    </div>
+		    <div class="form-group">
+		      <label for="edit-name">Rasi/Nakshyatra<span class="form-required" title="This field is required.">*</span></label>
+		      <input type="text" id="edit-name" name="name" value="" size="60" maxlength="60" class="form-text required">
+		    </div>
+		    <div class="form-group">
+			     <label for="edit-name">About you <span class="form-required" title="This field is required.">*</span></label>
+				 <textarea class="form-control bio" placeholder="" rows="3"></textarea>
+			  </div> 
+			  <div class="form-group">
+			     <label for="edit-name">What Type you searching for<span class="form-required" title="This field is required.">*</span></label>
+				 <textarea class="form-control bio" placeholder="" rows="3"></textarea>
+			  </div> 
+			  <div class="form-group">
+			     <label for="edit-name">Upload Jatak<span class="form-required" title="This field is required.">*</span></label>
+				 <input type="file" id="edit-name" name="name" value="" size="60" maxlength="60" class="form-text required">
+			  </div>
+			  <div class="form-group">
+			     <label for="edit-name">Upload Photo<span class="form-required" title="This field is required.">*</span></label>
+				 <input type="file" id="edit-name" name="name" value="" size="60" maxlength="60" class="form-text required">
 			  </div>
 			  <div class="form-actions">
 			    <input type="submit" id="edit-submit" name="op" value="Submit" class="btn_1 submit">
@@ -281,9 +346,9 @@ $(document).ready(function(){
    </div>
   </div>
 </div>
-<div class="map">
+<!-- <div class="map">
 	<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d3150859.767904157!2d-96.62081048651531!3d39.536794757966845!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sin!4v1408111832978"> </iframe>
-</div>
+</div> -->
 <div class="footer">
     	<div class="container">
     		<div class="col-md-4 col_2">
@@ -318,7 +383,7 @@ $(document).ready(function(){
     		</div>
     		<div class="clearfix"> </div>
     		<div class="copy">
-		       <p>Copyright © 2015 Marital . All Rights Reserved  | Design by <a href="http://w3layouts.com/" target="_blank">W3layouts</a> </p>
+		       <p>Copyright © 2016  <a href="http://odiajodi.com/" target="_blank">odiajodi.com</a> </p>
 	        </div>
       </div>
 </div>

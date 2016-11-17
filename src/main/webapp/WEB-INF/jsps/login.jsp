@@ -48,15 +48,15 @@ $(document).ready(function(){
 				<li class="green">
 				  <a href="#" class="icon-home"></a>
 				  <ul>
-					<li><a href="login.html">Login</a></li>
-					<li><a href="register.html">Register</a></li>
-					<li><a href="index.html">Logout</a></li>
+					<li><a href="login">Login</a></li>
+					<li><a href="register">Register</a></li>
+					<li><a href="index">Logout</a></li>
 				  </ul>
 				</li>
 			   </ul>
              </nav>
            </div>
-           <a class="brand" href="index.html"><img src="images/logo.png" alt="logo"></a>
+           <a class="brand" href="index"><img src="images/logo.png" alt="logo"></a>
            <div class="pull-right">
           	<nav class="navbar nav_bottom" role="navigation">
  
@@ -73,9 +73,9 @@ $(document).ready(function(){
 		   <!-- Collect the nav links, forms, and other content for toggling -->
 		    <div class="collapse navbar-collapse" id="bs-megadropdown-tabs">
 		        <ul class="nav navbar-nav nav_1">
-		            <li><a href="index.html">Home</a></li>
-		            <li><a href="about.html">About</a></li>
-		    		<li class="dropdown">
+		            <li><a href="index">Home</a></li>
+		            <li><a href="about">About</a></li>
+		    		<!-- <li class="dropdown">
 		              <a href="#" class="dropdown-toggle" data-toggle="dropdown">Matches<span class="caret"></span></a>
 		              <ul class="dropdown-menu" role="menu">
 		                <li><a href="matches.html">New Matches</a></li>
@@ -104,7 +104,7 @@ $(document).ready(function(){
 		                <li><a href="sent.html">Sent</a></li>
 		                <li><a href="upgrade.html">Upgrade</a></li>
 		              </ul>
-		            </li>
+		            </li> -->
 		            <li class="last"><a href="contact.html">Contacts</a></li>
 		        </ul>
 		     </div><!-- /.navbar-collapse -->
@@ -119,7 +119,7 @@ $(document).ready(function(){
   <div class="container">
    <div class="breadcrumb1">
      <ul>
-        <a href="index.html"><i class="fa fa-home home_1"></i></a>
+        <a href="index"><i class="fa fa-home home_1"></i></a>
         <span class="divider">&nbsp;|&nbsp;</span>
         <li class="current-page">Login</li>
      </ul>
