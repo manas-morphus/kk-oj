@@ -11,7 +11,9 @@ import org.springframework.web.servlet.ModelAndView;
 @Controller
 @RequestMapping("/*")
 public class HomeController {
-	@RequestMapping(value="/" ,method=RequestMethod.GET)
+	//this code is achieved ViewControllerRegistry in WebConfiguration class
+	//keep this code for future reference
+	/*@RequestMapping(value="/" ,method=RequestMethod.GET)
 	public ModelAndView loadIndexPage(final HttpServletRequest request,final HttpServletResponse response)throws Exception{
 		ModelAndView model=new ModelAndView();
 		model.setViewName("index");
@@ -28,5 +30,5 @@ public class HomeController {
 		ModelAndView model=new ModelAndView();
 		model.setViewName("contact");
 		return model;
-	}
+	}*/
 }

@@ -9,6 +9,7 @@ import org.springframework.core.env.Environment;
 import org.springframework.web.servlet.ViewResolver;
 import org.springframework.web.servlet.config.annotation.EnableWebMvc;
 import org.springframework.web.servlet.config.annotation.ResourceHandlerRegistry;
+import org.springframework.web.servlet.config.annotation.ViewControllerRegistry;
 import org.springframework.web.servlet.config.annotation.WebMvcConfigurerAdapter;
 import org.springframework.web.servlet.view.InternalResourceViewResolver;
 import org.springframework.web.servlet.view.JstlView;
@@ -20,6 +21,15 @@ import org.springframework.web.servlet.view.JstlView;
 public class WebConfiguration extends WebMvcConfigurerAdapter{
 	
 	private @Autowired Environment enviornment;
+	
+	/*set view without controller*/
+	@Override
+	public void addViewControllers(ViewControllerRegistry registry) {
+		registry.addViewController("/login").setViewName("login");
+		registry.addViewController("/about").setViewName("about");
+		registry.addViewController("/contact").setViewName("contact");
+			
+	};
 	
 	@Bean
 	public ViewResolver viewResolver(){
@@ -35,5 +45,7 @@ public class WebConfiguration extends WebMvcConfigurerAdapter{
 		.addResourceLocations("/css/","/images/","/js/","/fonts/")
 		.setCachePeriod(14400);
 	}
+	
+	
 
 }

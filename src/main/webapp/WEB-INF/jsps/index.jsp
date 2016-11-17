@@ -48,9 +48,9 @@ $(document).ready(function(){
 				<li class="green">
 					<a href="#" class="icon-home"></a>
 					<ul>
-						<li><a href="login.html">Login</a></li>
-					    <li><a href="register.html">Register</a></li>
-					    <li><a href="index.html">Logout</a></li>
+						<li><a href="login">Login</a></li>
+					    <li><a href="register">Register</a></li>
+					    <li><a href="index">Logout</a></li>
 					</ul>
 				</li>
 			   </ul>
