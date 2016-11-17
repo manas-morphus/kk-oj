@@ -38,7 +38,7 @@ public class UserLoginController {
 		System.out.println("validate user starts");
 		List<UserLogin> list=userLoginManager.authenticateUser(username, password);
 		System.out.println("validate user after call");
-		if(list.get(0).getUserName().equals("manas") && list.get(0).getPassword().equals("manas123")){
+		if(list.size()>0){
 			model.setViewName("search");
 		}else{
 			model.setViewName("index");

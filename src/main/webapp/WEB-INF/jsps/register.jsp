@@ -74,7 +74,7 @@ $(document).ready(function(){
 		        <ul class="nav navbar-nav nav_1">
 		            <li><a href="index.html">Home</a></li>
 		            <li><a href="about.html">About</a></li>
-		    		<li class="dropdown">
+		    		<!-- <li class="dropdown">
 		              <a href="#" class="dropdown-toggle" data-toggle="dropdown">Matches<span class="caret"></span></a>
 		              <ul class="dropdown-menu" role="menu">
 		                <li><a href="matches.html">New Matches</a></li>
@@ -103,7 +103,7 @@ $(document).ready(function(){
 		                <li><a href="sent.html">Sent</a></li>
 		                <li><a href="upgrade.html">Upgrade</a></li>
 		              </ul>
-		            </li>
+		            </li> -->
 		            <li class="last"><a href="contact.html">Contacts</a></li>
 		        </ul>
 		     </div><!-- /.navbar-collapse -->
