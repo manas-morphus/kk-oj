@@ -56,7 +56,7 @@ $(document).ready(function(){
 			   </ul>
              </nav>
            </div>
-           <a class="brand" href="index"><img src="images/logo.png" alt="logo"></a>
+           <a class="brand" href="index"><img src="images/logo-oj.png" alt="logo"></a>
            <div class="pull-right">
           	<nav class="navbar nav_bottom" role="navigation">
  
@@ -160,7 +160,12 @@ $(document).ready(function(){
     	<div class="container">
     		<div class="col-md-4 col_2">
     			<h4>About Us</h4>
-    			<p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris."</p>
+    			<p>We are a small team ,which communicates between two perfect parties according
+	to their requirements.our match making services is started since 2010.it is absolute
+	offline mode.we have a number of energetic agents across all the districts of
+	odisha,who understand the client’s requirements ,then scans the entire database of
+	profiles. as soon as getting the perfect match the team will consult between two
+	parties.</p>
     		</div>
     		<div class="col-md-2 col_2">
     			<h4>Help & Support</h4>
@@ -190,7 +195,7 @@ $(document).ready(function(){
     		</div>
     		<div class="clearfix"> </div>
     		<div class="copy">
-		       <p>Copyright � 2016  <a href="http://odiajodi.com/" target="_blank">odiajodi.com</a> </p>
+		       <p>Copyright © 2016  <a href="http://odiajodi.com/" target="_blank">odiajodi.com</a> </p>
 	        </div>
       </div>
 </div>
