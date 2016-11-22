@@ -130,8 +130,9 @@ $(document).ready(function(){
         <dl class="grid_4">
             <dt>Contact Person :</dt>
             <dd>
-                Kamalakanta Das,
-                Entrepreneur
+                Kamalakanta Das,<br>
+                Entrepreneur<br>
+                <a href="malito:kamalakanta@odiajodi.com">kamalakanta@odiajodi.com</a>
             </dd>
         </dl>
         <dl class="grid_4">
@@ -142,7 +143,8 @@ $(document).ready(function(){
         </dl>
         <dl class="grid_4">
             <dt>E-mail :</dt>
-            <dd><a href="malito:info@ojiajodi.com">info@ojiajodi.com</a></dd>
+            <dd><a href="malito:info@ojiajodi.com">info@odiajodi.com</a><br>
+            <a href="malito:info@ojiajodi.com">support@odiajodi.com</a></dd>
         </dl>
       </address>
     </div>

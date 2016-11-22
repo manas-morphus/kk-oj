@@ -55,7 +55,7 @@ $(document).ready(function(){
 			   </ul>
              </nav>
            </div>
-           <a class="brand" href="index.html"><img src="/images/logo-oj.gif" alt="logo"></a>
+           <a class="brand" href="index"><img src='<c:url value="/images/logo-oj.gif"/>' alt="logo"></a>
            <div class="pull-right">
           	<nav class="navbar nav_bottom" role="navigation">
  
@@ -72,39 +72,39 @@ $(document).ready(function(){
 		   <!-- Collect the nav links, forms, and other content for toggling -->
 		    <div class="collapse navbar-collapse" id="bs-megadropdown-tabs">
 		        <ul class="nav navbar-nav nav_1">
-		            <li><a href="index.html">Home</a></li>
-		            <li><a href="about.html">About</a></li>
+		            <li><a href="index">Home</a></li>
+		            <li><a href="about">About</a></li>
 		    		<!-- <li class="dropdown">
 		              <a href="#" class="dropdown-toggle" data-toggle="dropdown">Matches<span class="caret"></span></a>
 		              <ul class="dropdown-menu" role="menu">
-		                <li><a href="matches.html">New Matches</a></li>
-		                <li><a href="viewed-profile.html">Who Viewed my Profile</a></li>
-		                <li><a href="viewed-not_contacted.html">Viewed & not Contacted</a></li>
-		                <li><a href="members.html">Premium Members</a></li>
-		                <li><a href="shortlisted.html">Shortlisted Profile</a></li>
+		                <li><a href="matches">New Matches</a></li>
+		                <li><a href="viewed-profile">Who Viewed my Profile</a></li>
+		                <li><a href="viewed-not_contacted">Viewed & not Contacted</a></li>
+		                <li><a href="members">Premium Members</a></li>
+		                <li><a href="shortlisted">Shortlisted Profile</a></li>
 		              </ul>
 		            </li>
 					<li class="dropdown">
 		              <a href="#" class="dropdown-toggle" data-toggle="dropdown">Search<span class="caret"></span></a>
 		              <ul class="dropdown-menu" role="menu">
-		                <li><a href="search.html">Regular Search</a></li>
-		                <li><a href="profile.html">Recently Viewed Profiles</a></li>
-		                <li><a href="search-id.html">Search By Profile ID</a></li>
-		                <li><a href="faq.html">Faq</a></li>
-		                <li><a href="shortcodes.html">Shortcodes</a></li>
+		                <li><a href="search">Regular Search</a></li>
+		                <li><a href="profile">Recently Viewed Profiles</a></li>
+		                <li><a href="search-id">Search By Profile ID</a></li>
+		                <li><a href="faq">Faq</a></li>
+		                <li><a href="shortcodes">Shortcodes</a></li>
 		              </ul>
 		            </li>
 		            <li class="dropdown">
 		              <a href="#" class="dropdown-toggle" data-toggle="dropdown">Messages<span class="caret"></span></a>
 		              <ul class="dropdown-menu" role="menu">
-		                <li><a href="inbox.html">Inbox</a></li>
-		                <li><a href="inbox.html">New</a></li>
-		                <li><a href="inbox.html">Accepted</a></li>
-		                <li><a href="sent.html">Sent</a></li>
-		                <li><a href="upgrade.html">Upgrade</a></li>
+		                <li><a href="inbox">Inbox</a></li>
+		                <li><a href="inbox">New</a></li>
+		                <li><a href="inbox">Accepted</a></li>
+		                <li><a href="sent">Sent</a></li>
+		                <li><a href="upgrade">Upgrade</a></li>
 		              </ul>
 		            </li> -->
-		            <li class="last"><a href="contact.html">Contacts</a></li>
+		            <li class="last"><a href="contact">Contacts</a></li>
 		        </ul>
 		     </div><!-- /.navbar-collapse -->
 		    </nav>
@@ -118,7 +118,7 @@ $(document).ready(function(){
   <div class="container">
    <div class="breadcrumb1">
      <ul>
-        <a href="index.html"><i class="fa fa-home home_1"></i></a>
+        <a href="index"><i class="fa fa-home home_1"></i></a>
         <span class="divider">&nbsp;|&nbsp;</span>
         <li class="current-page">Register</li>
      </ul>
@@ -126,6 +126,18 @@ $(document).ready(function(){
    <div class="services">
    	  <div class="col-sm-6 login_left">
 	     <form>
+	     	<div class="form-group">
+		      <label for="edit-name">Profile For <span class="form-required" title="This field is required.">*</span></label>
+                    <select class="form-text required">
+	                    <option value="">Myself</option>
+	                    <option value="">Son</option>
+	                    <option value="">Daughter</option>
+	                     <option value="">Brother</option>
+	                    <option value="">Sister</option>
+	                     <option value="">Relative</option>
+	                    <option value="">Friend</option>
+                    </select>
+		    </div>
 	  	    <div class="form-group">
 		      <label for="edit-name">Name <span class="form-required" title="This field is required.">*</span></label>
 		      <input type="text" id="edit-name" name="name" value="" size="60" maxlength="60" class="form-text required">
@@ -364,17 +376,17 @@ $(document).ready(function(){
     			<h4>Help & Support</h4>
     			<ul class="footer_links">
     				<li><a href="#">24x7 Live help</a></li>
-    				<li><a href="contact.html">Contact us</a></li>
+    				<li><a href="contact">Contact us</a></li>
     				<li><a href="#">Feedback</a></li>
-    				<li><a href="faq.html">FAQs</a></li>
+    				<li><a href="faq">FAQs</a></li>
     			</ul>
     		</div>
     		<div class="col-md-2 col_2">
     			<h4>Quick Links</h4>
     			<ul class="footer_links">
-    				<li><a href="privacy.html">Privacy Policy</a></li>
-    				<li><a href="terms.html">Terms and Conditions</a></li>
-    				<li><a href="services.html">Services</a></li>
+    				<li><a href="privacy">Privacy Policy</a></li>
+    				<li><a href="terms">Terms and Conditions</a></li>
+    				<li><a href="services">Services</a></li>
     			</ul>
     		</div>
     		<div class="col-md-2 col_2">

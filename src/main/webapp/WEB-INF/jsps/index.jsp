@@ -8,7 +8,10 @@
 <title>ODIA JODI</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<meta name="keywords" content="Marital" />
+<meta name="keywords" content="ODIAJODI,odiajodi,online matrimony services in odisha,odisha matrimony,odiamatrimony,odia sadhi,marriage protal in odisha,
+odia match,odia bahaghara,odia bibaha,odiavivaha,online odia matrimony,odia matrimonial sites,odia marriage,odia bara,
+odia kanya,odia bride,odia groom,best matrimony in odisha,odia pua/jhia,the world's leading odia matchmaking site,
+the india's leading odia matrimony site,best matrimony sites in odisha,choose my partener in odisha,no 1 odia matrimony services" />
 <script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
 <link href='<c:url value="/css/bootstrap-3.1.1.min.css"/>' rel='stylesheet' type='text/css' />
 <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
@@ -305,7 +308,7 @@ $(document).ready(function(){
 	         <ul> 
 			   <li>
 				  	<div class="suceess_story-date">
-						<span class="entry-1">Dec 20, 2015</span>
+						<span class="entry-1">Feb 2016</span>
 					</div>
 					<div class="suceess_story-content-container">
 						<figure class="suceess_story-content-featured-image">
@@ -313,7 +316,11 @@ $(document).ready(function(){
 					    </figure>
 						<div class="suceess_story-content-info">
 				        	<h4><a href="#">Pankaj & Lopa</a></h4>				        	
-				        	<p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form,.<a href="#">More...</a></p>
+				        	<p>We are giving thanks to odiajodi.com for it's corporation and services. Dec 2015
+								I was very confused and worried for choosing my life partner .when I got in to touch with its team ,it's changed my life.now we both are happy.thanks to odiajodi.com Feb 2016
+								We are both happy because of odiajodi.com.its service is genuine and reliable.Again thanks to the odiajodi team.
+								It gives the best services in odisha,that we realised.nice interface.
+								<a href="#">More...</a></p>
 				        </div>
 				    </div>
 				</li>
@@ -326,8 +333,12 @@ $(document).ready(function(){
 						   <img width="75" height="75" src="images/oj11.jpg" class="img-responsive" alt=""/>				            
 					    </figure>
 						<div class="suceess_story-content-info">
-				        	<h4><a href="#">Sambit & Sonali</a></h4>				        	
-				        	<p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form,.<a href="#">More...</a></p>
+				        	<h4><a href="#">Sambit & Sonali</a></h4>
+				        	<p>We are giving thanks to odiajodi.com for it's corporation and services. Dec 2015
+								I was very confused and worried for choosing my life partner .when I got in to touch with its team ,it's changed my life.now we both are happy.thanks to odiajodi.com Feb 2016
+								We are both happy because of odiajodi.com.its service is genuine and reliable.Again thanks to the odiajodi team.
+								It gives the best services in odisha,that we realised.nice interface.
+								<a href="#">More...</a></p>				        	
 				        </div>
 				    </div>
 				</li>
@@ -340,8 +351,12 @@ $(document).ready(function(){
 						   <img width="75" height="75" src="images/oj12.jpg" class="img-responsive" alt=""/>				            
 					    </figure>
 						<div class="suceess_story-content-info">
-				        	<h4><a href="#">Biswa & Barsa</a></h4>				        	
-				        	<p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form,.<a href="#">More...</a></p>
+				        	<h4><a href="#">Biswa & Barsa</a></h4>	
+				        	<p>We are giving thanks to odiajodi.com for it's corporation and services. Dec 2015
+								I was very confused and worried for choosing my life partner .when I got in to touch with its team ,it's changed my life.now we both are happy.thanks to odiajodi.com Feb 2016
+								We are both happy because of odiajodi.com.its service is genuine and reliable.Again thanks to the odiajodi team.
+								It gives the best services in odisha,that we realised.nice interface.
+								<a href="#">More...</a></p>			        	
 				        </div>
 				    </div>
 				</li>
@@ -354,8 +369,12 @@ $(document).ready(function(){
 						   <img width="75" height="75" src="images/oj13.jpg" class="img-responsive" alt=""/>				            
 					    </figure>
 						<div class="suceess_story-content-info">
-				        	<h4><a href="#">Avimanyu & Anindita</a></h4>				        	
-				        	<p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form,.<a href="#">More...</a></p>
+				        	<h4><a href="#">Avimanyu & Anindita</a></h4>
+				        	<p>We are giving thanks to odiajodi.com for it's corporation and services. Dec 2015
+								I was very confused and worried for choosing my life partner .when I got in to touch with its team ,it's changed my life.now we both are happy.thanks to odiajodi.com Feb 2016
+								We are both happy because of odiajodi.com.its service is genuine and reliable.Again thanks to the odiajodi team.
+								It gives the best services in odisha,that we realised.nice interface.
+								<a href="#">More...</a></p>				        	
 				        </div>
 				    </div>
 				</li>
@@ -368,26 +387,34 @@ $(document).ready(function(){
 						   <img width="75" height="75" src="images/oj14.jpg" class="img-responsive" alt=""/>				            
 					    </figure>
 						<div class="suceess_story-content-info">
-				        	<h4><a href="#">Pravudatta & Nirja</a></h4>				        	
-				        	<p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form,.<a href="#">More...</a></p>
+				        	<h4><a href="#">Pravudatta & Nirja</a></h4>	
+				        	<p>We are giving thanks to odiajodi.com for it's corporation and services. Dec 2015
+								I was very confused and worried for choosing my life partner .when I got in to touch with its team ,it's changed my life.now we both are happy.thanks to odiajodi.com Feb 2016
+								We are both happy because of odiajodi.com.its service is genuine and reliable.Again thanks to the odiajodi team.
+								It gives the best services in odisha,that we realised.nice interface.
+								<a href="#">More...</a></p>			        	
 				        </div>
 				    </div>
 				</li>
-	            <!-- <li>
+	             <li>
 				  	<div class="suceess_story-date">
-						<span class="entry-1">Dec 20, 2015</span>
+						<span class="entry-1">April 19, 2016</span>
 					</div>
 					<div class="suceess_story-content-container">
 						<figure class="suceess_story-content-featured-image">
 						   <img width="75" height="75" src="images/oj15.jpg" class="img-responsive" alt=""/>				            
 					    </figure>
 						<div class="suceess_story-content-info">
-				        	<h4><a href="#">Lorem & Ipsum</a></h4>				        	
-				        	<p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form,.<a href="#">More...</a></p>
+				        	<h4><a href="#">Subha & Manas</a></h4>
+				        	<p>We are giving thanks to odiajodi.com for it's corporation and services. Dec 2015
+								I was very confused and worried for choosing my life partner .when I got in to touch with its team ,it's changed my life.now we both are happy.thanks to odiajodi.com Feb 2016
+								We are both happy because of odiajodi.com.its service is genuine and reliable.Again thanks to the odiajodi team.
+								It gives the best services in odisha,that we realised.nice interface.
+								<a href="#">More...</a></p>					        	
 				        </div>
 				    </div>
 				</li>
-	            <li>
+	           <!-- <li>
 				  	<div class="suceess_story-date">
 						<span class="entry-1">Dec 20, 2015</span>
 					</div>
