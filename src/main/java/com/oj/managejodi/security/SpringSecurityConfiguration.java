@@ -15,6 +15,8 @@ public class SpringSecurityConfiguration extends WebSecurityConfigurerAdapter{
 	@Autowired
 	@Qualifier("customUserDetailsService")
 	UserDetailsService userDetailService;
+	@Autowired
+	CustomSuccessHandler customSuccessHandler;
 	
 	public void configureGlobalSecurity(final AuthenticationManagerBuilder auth)throws Exception{
 		auth.userDetailsService(userDetailService);
@@ -25,7 +27,7 @@ public class SpringSecurityConfiguration extends WebSecurityConfigurerAdapter{
                 .hasAnyRole("ROLE_USER_GEN").antMatchers("/**")
                 .hasAnyRole("ROLE_USER_GEN","ROLE_USER_PAID").and().csrf().disable().userDetailsService(userDetailService);
                 
-         http.formLogin().loginPage("/login").permitAll().loginProcessingUrl("/validateUser")
+         http.formLogin().successHandler(customSuccessHandler).loginPage("/login").permitAll().loginProcessingUrl("/validateUser")
          .usernameParameter("username").passwordParameter("password").and().exceptionHandling().accessDeniedPage("/Access_Denied");
          
          

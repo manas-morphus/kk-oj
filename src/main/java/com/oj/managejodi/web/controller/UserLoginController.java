@@ -69,7 +69,7 @@ public class UserLoginController {
 		return model;
 	}
 	@RequestMapping(value="/" ,method=RequestMethod.GET)
-	public ModelAndView loadSearchPage(final HttpServletRequest request,final HttpServletResponse response)throws Exception{
+	public ModelAndView redirectPage(final HttpServletRequest request,final HttpServletResponse response)throws Exception{
 		ModelAndView model=new ModelAndView();
 		model.setViewName("search");
 		return model;
