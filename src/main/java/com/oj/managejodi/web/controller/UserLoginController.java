@@ -74,6 +74,34 @@ public class UserLoginController {
 		model.setViewName("search");
 		return model;
 	}
-	
-
+	@RequestMapping(value="/userg" ,method=RequestMethod.GET)
+	public ModelAndView redirectPageUserGen(final HttpServletRequest request,final HttpServletResponse response)throws Exception{
+		ModelAndView model=new ModelAndView();
+		model.setViewName("user");
+		return model;
+	}
+	@RequestMapping(value="/userp" ,method=RequestMethod.GET)
+	public ModelAndView redirectPageUserPaid(final HttpServletRequest request,final HttpServletResponse response)throws Exception{
+		ModelAndView model=new ModelAndView();
+		model.setViewName("userp");
+		return model;
+	}
+	@RequestMapping(value="/userpp" ,method=RequestMethod.GET)
+	public ModelAndView redirectPagePaidPrem(final HttpServletRequest request,final HttpServletResponse response)throws Exception{
+		ModelAndView model=new ModelAndView();
+		model.setViewName("userpp");
+		return model;
+	}
+	@RequestMapping(value="/adminopr" ,method=RequestMethod.GET)
+	public ModelAndView redirectPageAdminOpr(final HttpServletRequest request,final HttpServletResponse response)throws Exception{
+		ModelAndView model=new ModelAndView();
+		model.setViewName("adminopr");
+		return model;
+	}
+	@RequestMapping(value="/adminall" ,method=RequestMethod.GET)
+	public ModelAndView redirectPageAdminAll(final HttpServletRequest request,final HttpServletResponse response)throws Exception{
+		ModelAndView model=new ModelAndView();
+		model.setViewName("adminall");
+		return model;
+	}
 }

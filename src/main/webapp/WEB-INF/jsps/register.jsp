@@ -340,6 +340,10 @@ $(document).ready(function(){
 			     <label for="edit-name">Upload Photo<span class="form-required" title="This field is required.">*</span></label>
 				 <input type="file" id="edit-name" name="name" value="" size="60" maxlength="60" class="form-text required">
 			  </div>
+			   <div class="form-group">
+			     <label for="edit-name">Upload Any Govt. ID Proof<span class="form-required" title="This field is required.">*</span></label>
+				 <input type="file" id="edit-name" name="name" value="" size="60" maxlength="60" class="form-text required">
+			  </div>
 			  <div class="form-actions">
 			    <input type="submit" id="edit-submit" name="op" value="Submit" class="btn_1 submit">
 			  </div>

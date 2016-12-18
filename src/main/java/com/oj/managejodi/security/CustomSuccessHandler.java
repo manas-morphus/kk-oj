@@ -47,15 +47,15 @@ public class CustomSuccessHandler extends SimpleUrlAuthenticationSuccessHandler{
 	        }
 	 
 	        if (isUserGen(roles)) {
-	            url = "/db";
+	            url = "/userg";
 	        } else if (isUserPaid(roles)) {
-	            url = "/admin";
+	            url = "/userp";
 	        } else if (isUserPaidPrem(roles)) {
-	            url = "/home";
+	            url = "/userpp";
 	        } else if (isAdminOpr(roles)) {
-	            url = "/home";
+	            url = "/adminopr";
 	        } else if (isAdminOprAll(roles)) {
-	            url = "/home";
+	            url = "/adminall";
 	        } else {
 	            url = "/accessDenied";
 	        }
