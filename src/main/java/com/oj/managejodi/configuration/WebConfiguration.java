@@ -1,5 +1,7 @@
 package com.oj.managejodi.configuration;
 
+import javax.servlet.MultipartConfigElement;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.ComponentScan;
@@ -7,6 +9,7 @@ import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.Import;
 import org.springframework.context.annotation.PropertySource;
 import org.springframework.core.env.Environment;
+import org.springframework.web.multipart.commons.CommonsMultipartResolver;
 import org.springframework.web.servlet.ViewResolver;
 import org.springframework.web.servlet.config.annotation.EnableWebMvc;
 import org.springframework.web.servlet.config.annotation.ResourceHandlerRegistry;
@@ -30,6 +33,7 @@ public class WebConfiguration extends WebMvcConfigurerAdapter{
 	@Override
 	public void addViewControllers(ViewControllerRegistry registry) {
 		registry.addViewController("/login").setViewName("login");
+		registry.addViewController("/register/loadPage").setViewName("register");
 		registry.addViewController("/about").setViewName("about");
 		registry.addViewController("/contact").setViewName("contact");
 			
@@ -50,6 +54,12 @@ public class WebConfiguration extends WebMvcConfigurerAdapter{
 		.setCachePeriod(14400);
 	}
 	
-	
+	 @Bean(name="multipartResolver")
+	    public CommonsMultipartResolver multiPartResolver() {
+		 CommonsMultipartResolver resolver = new CommonsMultipartResolver();
+		 resolver.setMaxUploadSize(10485000);
+		 resolver.setMaxInMemorySize(10485000);
+	        return resolver;
+	    }
 
 }

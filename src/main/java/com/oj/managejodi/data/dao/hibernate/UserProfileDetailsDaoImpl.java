@@ -22,5 +22,7 @@ public class UserProfileDetailsDaoImpl extends GenericDaoImpl<UserProfileDetails
 		
 		return findByCtiteriaList(Restrictions.eq("userName",name));
 	}
-	
+	public void saveUser(UserProfileDetails details)throws Exception{
+		save(details);
+	}
 }

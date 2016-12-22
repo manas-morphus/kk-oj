@@ -20,5 +20,8 @@ public class UserProfileDetailsManagerImpl implements UserProfileDetailsManager 
 		// TODO Auto-generated method stub
 		return userDetailsDao.findByUserName(name);
 	}
+	public void saveUser(UserProfileDetails details)throws Exception{
+		userDetailsDao.saveUser(details);
+	}
 	
 }

@@ -52,7 +52,7 @@ $(document).ready(function(){
 					<a href="#" class="icon-home"></a>
 					<ul>
 						<li><a href="login">Login</a></li>
-					    <li><a href="register">Register</a></li>
+					    <li><a href="register/loadPage">Register</a></li>
 					    <li><a href="index">Logout</a></li>
 					</ul>
 				</li>

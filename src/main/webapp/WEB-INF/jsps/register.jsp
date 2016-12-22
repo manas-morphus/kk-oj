@@ -9,16 +9,16 @@
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta name="keywords" content="Marital" />
 <script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
-<link href="css/bootstrap-3.1.1.min.css" rel='stylesheet' type='text/css' />
+<link href="../css/bootstrap-3.1.1.min.css" rel='stylesheet' type='text/css' />
 <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-<script src="js/jquery.min.js"></script>
-<script src="js/bootstrap.min.js"></script>
+<script src="../js/jquery.min.js"></script>
+<script src="../js/bootstrap.min.js"></script>
 <!-- Custom Theme files -->
-<link href="css/style.css" rel='stylesheet' type='text/css' />
+<link href="../css/style.css" rel='stylesheet' type='text/css' />
 <link href='//fonts.googleapis.com/css?family=Oswald:300,400,700' rel='stylesheet' type='text/css'>
 <link href='//fonts.googleapis.com/css?family=Ubuntu:300,400,500,700' rel='stylesheet' type='text/css'>
 <!----font-Awesome----->
-<link href="css/font-awesome.css" rel="stylesheet"> 
+<link href="../css/font-awesome.css" rel="stylesheet"> 
 <!----font-Awesome----->
 <script>
 $(document).ready(function(){
@@ -48,7 +48,7 @@ $(document).ready(function(){
 				  <a href="#" class="icon-home"></a>
 				  <ul>
 					<li><a href="login">Login</a></li>
-					<li><a href="register">Register</a></li>
+					<li><a href="register/loadPage">Register</a></li>
 					<li><a href="index">Logout</a></li>
 				  </ul>
 				</li>
@@ -125,17 +125,17 @@ $(document).ready(function(){
    </div>
    <div class="services">
    	  <div class="col-sm-6 login_left">
-	     <form>
+	     <form action='<c:url value="/register/save"/>' method="post" enctype="multipart/form-data">
 	     	<div class="form-group">
 		      <label for="edit-name">Profile For <span class="form-required" title="This field is required.">*</span></label>
-                    <select class="form-text required">
-	                    <option value="">Myself</option>
-	                    <option value="">Son</option>
-	                    <option value="">Daughter</option>
-	                     <option value="">Brother</option>
-	                    <option value="">Sister</option>
-	                     <option value="">Relative</option>
-	                    <option value="">Friend</option>
+                    <select class="form-text required" name="profileFor">
+	                    <option value="Myself">Myself</option>
+	                    <option value="Son">Son</option>
+	                    <option value="Daughter">Daughter</option>
+	                     <option value="Brother">Brother</option>
+	                    <option value="Sister">Sister</option>
+	                     <option value="Relative">Relative</option>
+	                    <option value="Friend">Friend</option>
                     </select>
 		    </div>
 	  	    <div class="form-group">
@@ -144,26 +144,26 @@ $(document).ready(function(){
 		    </div>
 		    <div class="form-group">
 		      <label for="edit-name">Fathers Name <span class="form-required" title="This field is required.">*</span></label>
-		      <input type="text" id="edit-name" name="name" value="" size="60" maxlength="60" class="form-text required">
+		      <input type="text" id="edit-name" name="fatherName" value="" size="60" maxlength="60" class="form-text required">
 		    </div>
 		    <div class="form-group">
 		      <label for="edit-name">Email <span class="form-required" title="This field is required.">*</span></label>
-		      <input type="text" id="edit-name" name="name" value="" size="60" maxlength="60" class="form-text required">
+		      <input type="text" id="edit-name" name="email" value="" size="60" maxlength="60" class="form-text required">
 		    </div>
 		     <div class="form-group">
 		      <label for="edit-name">Mobile Number<span class="form-required" title="This field is required.">*</span></label>
-		      <input type="text" id="edit-name" name="name" value="" size="60" maxlength="60" class="form-text required">
+		      <input type="text" id="edit-name" name="phone" value="" size="60" maxlength="60" class="form-text required">
 		    </div>
 		     <div class="form-group">
 		      <label for="edit-name">Address<span class="form-required" title="This field is required.">*</span></label>
-		      <textarea class="form-control bio" placeholder="" rows="3"></textarea>
+		      <textarea class="form-control bio" placeholder="" rows="3" name="address"></textarea>
 		    </div>
 		    <div class="age_select">
 		      <label for="edit-pass">DOB<span class="form-required" title="This field is required.">*</span></label>
 		        <div class="age_grid">
 		         <div class="col-sm-4 form_box">
                   <div class="select-block1">
-                    <select>
+                    <select name="dd">
 	                    <option value="">Date</option>
 	                    <option value="">1</option>
 	                    <option value="">2</option>
@@ -200,7 +200,7 @@ $(document).ready(function(){
                   </div>
             </div>
             <div class="col-sm-4 form_box2">
-                   <div class="select-block1">
+                   <div class="select-block1" name="mm">
                     <select>
 	                    <option value="">Month</option>
 	                    <option value="">January</option>
@@ -219,7 +219,7 @@ $(document).ready(function(){
                   </div>
                  </div>
                  <div class="col-sm-4 form_box1">
-                   <div class="select-block1">
+                   <div class="select-block1" name="yy">
                     <select>
 	                    <option value="">Year</option>
 	                    <option value="">1980</option>
@@ -271,10 +271,10 @@ $(document).ready(function(){
                 <div class="col-sm-5">
                     <div class="radios">
 				        <label for="radio-01" class="label_radio">
-				            <input type="radio" checked=""> Male
+				            <input type="radio" checked="" name="gender"> Male
 				        </label>
 				        <label for="radio-02" class="label_radio">
-				            <input type="radio"> Female
+				            <input type="radio" name="gender"> Female
 				        </label>
 	                </div>
                 </div>
@@ -286,66 +286,66 @@ $(document).ready(function(){
 			  </div> -->
 			  <div class="form-group">
 		      <label for="edit-name">Height<span class="form-required" title="This field is required.">*</span></label>
-		      <input type="text" id="edit-name" name="name" value="" size="60" maxlength="60" class="form-text required">
+		      <input type="text" id="edit-name" name="height" value="" size="60" maxlength="60" class="form-text required">
 		    </div>
 		     <div class="form-group">
 		      <label for="edit-name">Weight<span class="form-required" title="This field is required.">*</span></label>
-		      <input type="text" id="edit-name" name="name" value="" size="60" maxlength="60" class="form-text required">
+		      <input type="text" id="edit-name" name="weight" value="" size="60" maxlength="60" class="form-text required">
 		    </div>
 		     <div class="form-group">
 		      <label for="edit-name">Color<span class="form-required" title="This field is required.">*</span></label>
-		      <input type="text" id="edit-name" name="name" value="" size="60" maxlength="60" class="form-text required">
+		      <input type="text" id="edit-name" name="color" value="" size="60" maxlength="60" class="form-text required">
 		    </div>
 		     <div class="form-group">
 		      <label for="edit-name">Hair Style<span class="form-required" title="This field is required.">*</span></label>
-		      <input type="text" id="edit-name" name="name" value="" size="60" maxlength="60" class="form-text required">
+		      <input type="text" id="edit-name" name="hairStyle" value="" size="60" maxlength="60" class="form-text required">
 		    </div>
 		     <div class="form-group">
 		      <label for="edit-name">Eye<span class="form-required" title="This field is required.">*</span></label>
-		      <input type="text" id="edit-name" name="name" value="" size="60" maxlength="60" class="form-text required">
+		      <input type="text" id="edit-name" name="eye" value="" size="60" maxlength="60" class="form-text required">
 		    </div>
 		     <div class="form-group">
 		      <label for="edit-name">Father/Mother Occupation<span class="form-required" title="This field is required.">*</span></label>
-		      <input type="text" id="edit-name" name="name" value="" size="60" maxlength="60" class="form-text required">
+		      <input type="text" id="edit-name" name="parentOccupation" value="" size="60" maxlength="60" class="form-text required">
 		    </div>
 		     <div class="form-group">
 		      <label for="edit-name">Siblings and their marital status<span class="form-required" title="This field is required.">*</span></label>
-		      <input type="text" id="edit-name" name="name" value="" size="60" maxlength="60" class="form-text required">
+		      <input type="text" id="edit-name" name="sibling" value="" size="60" maxlength="60" class="form-text required">
 		    </div>
 		    <div class="form-group">
 		      <label for="edit-name">Qualification<span class="form-required" title="This field is required.">*</span></label>
-		      <input type="text" id="edit-name" name="name" value="" size="60" maxlength="60" class="form-text required">
+		      <input type="text" id="edit-name" name="qualification" value="" size="60" maxlength="60" class="form-text required">
 		    </div>
 		    <div class="form-group">
 		      <label for="edit-name">Occupation<span class="form-required" title="This field is required.">*</span></label>
-		      <input type="text" id="edit-name" name="name" value="" size="60" maxlength="60" class="form-text required">
+		      <input type="text" id="edit-name" name="occupation" value="" size="60" maxlength="60" class="form-text required">
 		    </div>
 		    <div class="form-group">
 		      <label for="edit-name">Rasi/Nakshyatra<span class="form-required" title="This field is required.">*</span></label>
-		      <input type="text" id="edit-name" name="name" value="" size="60" maxlength="60" class="form-text required">
+		      <input type="text" id="edit-name" name="rasiNakhetra" value="" size="60" maxlength="60" class="form-text required">
 		    </div>
 		    <div class="form-group">
 			     <label for="edit-name">About you <span class="form-required" title="This field is required.">*</span></label>
-				 <textarea class="form-control bio" placeholder="" rows="3"></textarea>
+				 <textarea class="form-control bio" placeholder="" rows="3" name="aboutYou"></textarea>
 			  </div> 
 			  <div class="form-group">
 			     <label for="edit-name">What Type you searching for<span class="form-required" title="This field is required.">*</span></label>
-				 <textarea class="form-control bio" placeholder="" rows="3"></textarea>
+				 <textarea class="form-control bio" placeholder="" rows="3" name="typeSearching"></textarea>
 			  </div> 
 			  <div class="form-group">
 			     <label for="edit-name">Upload Jatak<span class="form-required" title="This field is required.">*</span></label>
-				 <input type="file" id="edit-name" name="name" value="" size="60" maxlength="60" class="form-text required">
+				 <input type="file" id="edit-name" name="jatak" value="" size="60" maxlength="60" class="form-text required">
 			  </div>
 			  <div class="form-group">
 			     <label for="edit-name">Upload Photo<span class="form-required" title="This field is required.">*</span></label>
-				 <input type="file" id="edit-name" name="name" value="" size="60" maxlength="60" class="form-text required">
+				 <input type="file" id="edit-name" name="photo" value="" size="60" maxlength="60" class="form-text required">
 			  </div>
 			   <div class="form-group">
 			     <label for="edit-name">Upload Any Govt. ID Proof<span class="form-required" title="This field is required.">*</span></label>
-				 <input type="file" id="edit-name" name="name" value="" size="60" maxlength="60" class="form-text required">
+				 <input type="file" id="edit-name" name="idProof" value="" size="60" maxlength="60" class="form-text required">
 			  </div>
 			  <div class="form-actions">
-			    <input type="submit" id="edit-submit" name="op" value="Submit" class="btn_1 submit">
+			    <input type="submit" id="submit" name="submit" value="Submit" class="btn_1 submit">
 			  </div>
 		 </form>
 	  </div>
