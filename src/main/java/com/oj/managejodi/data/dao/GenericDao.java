@@ -12,4 +12,6 @@ public interface GenericDao<T,PK extends Serializable> {
 	Session getSession()throws HibernateException;
 	
 	List<T> findByCtiteriaList(Criterion... criterion)throws Exception;
+	
+	 T  save(T obj)throws Exception;
 }

@@ -38,7 +38,9 @@ public class GenericDaoImpl<T,PK extends Serializable> implements GenericDao<T, 
 		}
 		return criteria.list();
 	}
-	public void save(T obj)throws Exception{
-		 getSession().saveOrUpdate(obj);
+	
+	@Transactional(rollbackFor=Exception.class,value = "transactionManager")
+	public T  save(T obj)throws Exception{
+		return (T) getSession().merge(obj);
 	}
 }

@@ -2,6 +2,7 @@ package com.oj.managejodi.data.dao.hibernate;
 
 import java.util.List;
 
+import org.hibernate.Transaction;
 import org.hibernate.criterion.Restrictions;
 import org.springframework.stereotype.Repository;
 
@@ -22,7 +23,15 @@ public class UserProfileDetailsDaoImpl extends GenericDaoImpl<UserProfileDetails
 		
 		return findByCtiteriaList(Restrictions.eq("userName",name));
 	}
-	public void saveUser(UserProfileDetails details)throws Exception{
-		save(details);
+	public UserProfileDetails saveUser(UserProfileDetails details)throws Exception{
+		/*Transaction txn = null;
+		txn = getSession().beginTransaction();
+		System.out.println("email"+details.getEmail());
+		//String sql="INSERT INTO tbl_user_details (ID, USER_NAME, PASSWORD, PROFILE_FOR, NAME, FATHER_NAME, EMAIL, PHONE, ADDRESS, DOB, GENDER, HEIGHT, WEIGHT, COLOR, HAIR_STYLE, EYE, PARENT_OCCUPATION, SIBLINGS, QUALIFICATION, OCCUPATION, RASI_NAKSHETRA, TYPE_SEARCH, JATAK, PHOTO, ID_PROOF, CREATE_USER, CREATE_DATE, MODIFY_USER, MODIFY_DATE, IS_ACTIVE) VALUES (8,'uname1','pw1','proffor1','name1','fname1','email1','phone1','address1',NULL,'M','heighr','weight','color1','hst','eye','poccupation','sibling','qualification','occupation','rasi','typeser',"+details.getPhoto()+",'','','',NULL,'',NULL,'N')";
+		getSession().save(details);
+		//getSession().createSQLQuery(sql).executeUpdate();
+		System.out.println("hair style"+details.getHairStyle());
+		txn.commit();*/
+		return super.save(details);
 	}
 }

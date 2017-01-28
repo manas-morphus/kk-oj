@@ -47,7 +47,8 @@ public class CustomSuccessHandler extends SimpleUrlAuthenticationSuccessHandler{
 	        }
 	 
 	        if (isUserGen(roles)) {
-	            url = "/userg";
+	           // url = "/userg";
+	        	url = "/register/loadPage";
 	        } else if (isUserPaid(roles)) {
 	            url = "/userp";
 	        } else if (isUserPaidPrem(roles)) {
