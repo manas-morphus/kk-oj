@@ -4,6 +4,7 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
+<%@ page isELIgnored="false" %>
 <title>ODIA JODI</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
@@ -121,16 +122,7 @@ $(document).ready(function(){
   <div class="container">
    <div class="breadcrumb1">
    	<ul>
-        <%String success=request.getParameter("success")!=null?(String)request.getParameter("success"):"Hi"; 
-        	
-        	if(success.equalsIgnoreCase("YES")){
-        %>
-        <%= success%>
-        <li class="current-page" color="green">Registeration Success</li>
-        <%
-        success="NO";
-        	}
-        %>
+        <li class="current-page" style="color:#109507">${success}<br></li>
      </ul>
      <ul>
         <a href="index"><i class="fa fa-home home_1"></i></a>
@@ -140,7 +132,7 @@ $(document).ready(function(){
    </div>
    <div class="services">
    	  <div class="col-sm-6 login_left">
-	     <form action='<c:url value="/saveRegistration"/>' method="post" enctype="multipart/form-data">
+	     <form action='<c:url value="/register/save"/>' method="post" enctype="multipart/form-data">
 	     	<div class="form-group">
 		      <label for="edit-name">Profile For <span class="form-required" title="This field is required." style="color:red">*</span></label>
                     <select class="form-text required" name="profileFor">
@@ -349,15 +341,15 @@ $(document).ready(function(){
 			  </div> 
 			  <div class="form-group">
 			     <label for="edit-name">Upload Jatak<span class="form-required" title="This field is required."><!-- * --></span></label>
-				 <input type="file" id="edit-name" name="jatak" value="" size="60" maxlength="60" class="form-text required">
+				 <input type="file" id="jatak" name="jatak" value="" size="60" maxlength="60" class="form-text required">
 			  </div>
 			  <div class="form-group">
 			     <label for="edit-name">Upload Photo<span class="form-required" title="This field is required."><!-- * --></span></label>
-				 <input type="file" id="edit-name" name="photo" value="" size="60" maxlength="60" class="form-text required">
+				 <input type="file" id="photo" name="photo" value="" size="60" maxlength="60" class="form-text required">
 			  </div>
 			   <div class="form-group">
 			     <label for="edit-name">Upload Any Govt. ID Proof<span class="form-required" title="This field is required."><!-- * --></span></label>
-				 <input type="file" id="edit-name" name="idProof" value="" size="60" maxlength="60" class="form-text required">
+				 <input type="file" id="idProof" name="idProof" value="" size="60" maxlength="60" class="form-text required">
 			  </div>
 			  <div class="form-actions">
 			    <input type="submit" id="submit" name="submit" value="Submit" class="btn_1 submit" onclick="validate()">

@@ -81,8 +81,12 @@ public class UserRegistrationController {
 		}
 		
 		
+		if(success.equalsIgnoreCase("YES")){
+			model.addObject("success", "Registration Succesful");
+		}else{
+			model.addObject("failure", "Registration Failure!");
+		}
 		
-		model.addObject("success", success);
 		model.setViewName("register");
 		return model;
 	}
