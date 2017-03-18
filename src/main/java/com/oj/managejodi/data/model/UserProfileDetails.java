@@ -24,16 +24,18 @@ public class UserProfileDetails {
 	private long Id;
 	private String userName;
 	private String password;
+	private int registeredId;
 	private String createUser;
 	private String createDate;
 	private String modifyUser;
 	private String modifyDate;
+	private char isDeleted;
 	private char isActive;
 	private Set<UserRoleTypes> userRoleTypes = new HashSet<UserRoleTypes>(0);
 	@Id
 	@Column(name="ID")
-	/*@GenericGenerator(name="generator", strategy="increment")
-	@GeneratedValue(generator="generator")*/
+	@GenericGenerator(name="generator", strategy="increment")
+	@GeneratedValue(generator="generator")
 	public long getId() {
 		return Id;
 	}
@@ -56,6 +58,14 @@ public class UserProfileDetails {
 
 	public void setPassword(String password) {
 		this.password = password;
+	}
+	@Column(name="REGISTRATION_ID")
+	public int getRegisteredId() {
+		return registeredId;
+	}
+
+	public void setRegisteredId(int registeredId) {
+		this.registeredId = registeredId;
 	}
 
 	@Column(name="CREATE_USER")
@@ -90,6 +100,15 @@ public class UserProfileDetails {
 	public void setModifyDate(String modifyDate) {
 		this.modifyDate = modifyDate;
 	}
+	@Column(name="IS_DELETED")
+	public char getIsDeleted() {
+		return isDeleted;
+	}
+
+	public void setIsDeleted(char isDeleted) {
+		this.isDeleted = isDeleted;
+	}
+
 	@Column(name="IS_ACTIVE")
 	public char getIsActive() {
 		return isActive;

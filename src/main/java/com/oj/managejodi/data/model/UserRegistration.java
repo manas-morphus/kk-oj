@@ -4,12 +4,17 @@ import java.sql.Blob;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.Table;
+
+import org.hibernate.annotations.GenericGenerator;
 @Entity
 @Table(name="tbl_user_registered")
 public class UserRegistration {
 	@Id
+	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	@Column(name="ID")
 	private int Id;
 	
@@ -69,15 +74,15 @@ public class UserRegistration {
 	
 	@Column(name="TYPE_SEARCH")
 	private String typeSearching;
-//	
-//	@Column(name="JATAK")
-//	private Blob jatak;
-//	
-//	@Column(name="PHOTO")
-//	private Blob photo;
-//	
-//	@Column(name="ID_PROOF")
-//	private Blob idProof;
+	
+	@Column(name="JATAK")
+	private Blob jatak;
+	
+	@Column(name="PHOTO")
+	private Blob photo;
+	
+	@Column(name="ID_PROOF")
+	private Blob idProof;
 	
 	@Column(name="CREATE_USER")
 	private String createUser;
@@ -91,11 +96,14 @@ public class UserRegistration {
 	@Column(name="MODIFY_DATE") 
 	private String modifyDate;
 	
+	@Column(name="IS_DELETED")
+	private char isDeleted;
+	
 	@Column(name="IS_ACTIVE")
 	private char isActive;
 	
-	/*@GenericGenerator(name="generator", strategy="increment")
-	@GeneratedValue(generator="generator")*/
+	@GenericGenerator(name="generator", strategy="increment")
+	@GeneratedValue(generator="generator")
 	public int getId() {
 		return Id;
 	}
@@ -259,7 +267,7 @@ public class UserRegistration {
 		this.typeSearching = typeSearching;
 	}
 	
-	/*public Blob getJatak() {
+	public Blob getJatak() {
 		return jatak;
 	}
 
@@ -282,7 +290,6 @@ public class UserRegistration {
 	public void setIdProof(Blob idProof) {
 		this.idProof = idProof;
 	}
-*/
 	
 	public String getCreateUser() {
 		return createUser;
@@ -316,6 +323,14 @@ public class UserRegistration {
 		this.modifyDate = modifyDate;
 	}
 	
+	public char getIsDeleted() {
+		return isDeleted;
+	}
+
+	public void setIsDeleted(char isDeleted) {
+		this.isDeleted = isDeleted;
+	}
+
 	public char getIsActive() {
 		return isActive;
 	}

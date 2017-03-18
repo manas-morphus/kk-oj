@@ -12,8 +12,8 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 <script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
 <link href="css/bootstrap-3.1.1.min.css" rel='stylesheet' type='text/css' />
 <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-<script src="js/jquery.min.js"></script>
-<script src="js/bootstrap.min.js"></script>
+<script src='<c:url value="/js/jquery.min.js"/>'></script>
+<script src='<c:url value="/js/bootstrap.min.js"/>'></script>
 <!-- Custom Theme files -->
 <link href="css/style.css" rel='stylesheet' type='text/css' />
 <link href='//fonts.googleapis.com/css?family=Oswald:300,400,700' rel='stylesheet' type='text/css'>
@@ -48,15 +48,16 @@ $(document).ready(function(){
 				<li class="green">
 				  <a href="#" class="icon-home"></a>
 				  <ul>
-					<li><a href="login">Login</a></li>
-					<li><a href="register/loadPage">Register</a></li>
-					<li><a href="index">Logout</a></li>
+					<li><a href='<c:url value="login"/>'>Login</a></li>
+					<li><a href='<c:url value="register/loadPage"/>'>Register</a></li>
+					<li><a href='<c:url value="index"/>'>Logout</a></li>
+
 				  </ul>
 				</li>
 			   </ul>
              </nav>
            </div>
-           <a class="brand" href="index"><img src="images/logo-oj.png" alt="logo"></a>
+           <a class="brand" href="index"><img src='<c:url value="/images/logo-oj.gif"/>'  alt="logo"></a>
            <div class="pull-right">
           	<nav class="navbar nav_bottom" role="navigation">
  
@@ -73,8 +74,8 @@ $(document).ready(function(){
 		   <!-- Collect the nav links, forms, and other content for toggling -->
 		    <div class="collapse navbar-collapse" id="bs-megadropdown-tabs">
 		        <ul class="nav navbar-nav nav_1">
-		            <li><a href="index">Home</a></li>
-		            <li><a href="about">About</a></li>
+		            <li><a href='<c:url value="index"/>'>Home</a></li>
+		            <li><a href='<c:url value="about"/>'>About</a></li>
 		    		<!-- <li class="dropdown">
 		              <a href="#" class="dropdown-toggle" data-toggle="dropdown">Matches<span class="caret"></span></a>
 		              <ul class="dropdown-menu" role="menu">
@@ -105,7 +106,7 @@ $(document).ready(function(){
 		                <li><a href="upgrade.html">Upgrade</a></li>
 		              </ul>
 		            </li> -->
-		            <li class="last"><a href="contact.html">Contacts</a></li>
+		            <li class="last"><a href='<c:url value="contact"/>'>Contacts</a></li>
 		        </ul>
 		     </div><!-- /.navbar-collapse -->
 		    </nav>

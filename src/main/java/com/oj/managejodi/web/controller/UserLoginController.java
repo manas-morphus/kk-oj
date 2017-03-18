@@ -45,17 +45,19 @@ public class UserLoginController {
 		System.out.println("validate user starts");
 		List<UserLogin> list=userLoginManager.authenticateUser(username, password);
 		List<UserProfileDetails> listDtl=userDetailsManager.getUserDetails(username, password);
+		String roleCode="";
 		if(listDtl.size() > 0){
 				Set<UserRoleTypes> set = new HashSet<UserRoleTypes>();
 				set=listDtl.get(0).getUserRoleTypes();
 				for(UserRoleTypes ud:set){
 					System.out.println("ID"+ud.getId()+"user roles"+ud.getRoleCode());
+					roleCode=ud.getRoleCode();
 				}
 		}
 		
 		System.out.println("validate user after call");
-		if(list.size()>0){
-			model.setViewName("search");
+		if(list.size()>0 && roleCode.equalsIgnoreCase("USER_ADMIN_ALL")){
+			model.setViewName("members");
 		}else{
 			model.setViewName("index");
 		}
@@ -101,7 +103,7 @@ public class UserLoginController {
 	@RequestMapping(value="/adminall" ,method=RequestMethod.GET)
 	public ModelAndView redirectPageAdminAll(final HttpServletRequest request,final HttpServletResponse response)throws Exception{
 		ModelAndView model=new ModelAndView();
-		model.setViewName("adminall");
+		model.setViewName("members");
 		return model;
 	}
 }

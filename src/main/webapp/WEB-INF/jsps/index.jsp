@@ -51,9 +51,9 @@ $(document).ready(function(){
 				<li class="green">
 					<a href="#" class="icon-home"></a>
 					<ul>
-						<li><a href="login">Login</a></li>
-					    <li><a href="register/loadPage">Register</a></li>
-					    <li><a href="index">Logout</a></li>
+						<li><a href='<c:url value="login"/>'>Login</a></li>
+					    <li><a href='<c:url value="register/loadPage"/>'>Register</a></li>
+					    <li><a href='<c:url value="index"/>'>Logout</a></li>
 					</ul>
 				</li>
 			   </ul>
@@ -75,8 +75,8 @@ $(document).ready(function(){
 		   <!-- Collect the nav links, forms, and other content for toggling -->
 		    <div class="collapse navbar-collapse" id="bs-megadropdown-tabs">
 		        <ul class="nav navbar-nav nav_1">
-		            <li><a href="index">Home</a></li>
-		            <li><a href="about">About</a></li>
+		            <li><a href='<c:url value="index"/>'>Home</a></li>
+		            <li><a href='<c:url value="about"/>'>About</a></li>
 		    		<!-- <li class="dropdown">
 		              <a href="#" class="dropdown-toggle" data-toggle="dropdown">Matches<span class="caret"></span></a>
 		              <ul class="dropdown-menu" role="menu">
@@ -107,7 +107,7 @@ $(document).ready(function(){
 		                <li><a href="upgrade">Upgrade</a></li>
 		              </ul>
 		            </li> -->
-		            <li class="last"><a href="contact">Contacts</a></li>
+		            <li class="last"><a href='<c:url value="contact"/>'>Contacts</a></li>
 		        </ul>
 		     </div><!-- /.navbar-collapse -->
 		    </nav>
@@ -121,7 +121,7 @@ $(document).ready(function(){
   <div class="container">
     <div class="banner_info">
       <h3>The real matcher</h3>
-      <a href="view_profile" class="hvr-shutter-out-horizontal">Create your Profile</a>
+      <a href="register/loadPage" class="hvr-shutter-out-horizontal">Create your Profile</a>
     </div>
   </div>
   <div class="profile_search">
@@ -335,16 +335,13 @@ $(document).ready(function(){
 						<div class="suceess_story-content-info">
 				        	<h4><a href="#">Sambit & Sonali</a></h4>
 				        	<p>We are giving thanks to odiajodi.com for it's corporation and services. Dec 2015
-								I was very confused and worried for choosing my life partner .when I got in to touch with its team ,it's changed my life.now we both are happy.thanks to odiajodi.com Feb 2016
-								We are both happy because of odiajodi.com.its service is genuine and reliable.Again thanks to the odiajodi team.
-								It gives the best services in odisha,that we realised.nice interface.
 								<a href="#">More...</a></p>				        	
 				        </div>
 				    </div>
 				</li>
 	            <li>
 				  	<div class="suceess_story-date">
-						<span class="entry-1">Dec 20, 2015</span>
+						<span class="entry-1">Feb, 2016</span>
 					</div>
 					<div class="suceess_story-content-container">
 						<figure class="suceess_story-content-featured-image">
@@ -352,17 +349,14 @@ $(document).ready(function(){
 					    </figure>
 						<div class="suceess_story-content-info">
 				        	<h4><a href="#">Biswa & Barsa</a></h4>	
-				        	<p>We are giving thanks to odiajodi.com for it's corporation and services. Dec 2015
-								I was very confused and worried for choosing my life partner .when I got in to touch with its team ,it's changed my life.now we both are happy.thanks to odiajodi.com Feb 2016
-								We are both happy because of odiajodi.com.its service is genuine and reliable.Again thanks to the odiajodi team.
-								It gives the best services in odisha,that we realised.nice interface.
+				        	<p>I was very confused and worried for choosing my life partner .when I got in to touch with its team ,it's changed my life.now we both are happy.thanks to odiajodi.com Feb 2016
 								<a href="#">More...</a></p>			        	
 				        </div>
 				    </div>
 				</li>
 	            <li>
 				  	<div class="suceess_story-date">
-						<span class="entry-1">Dec 20, 2015</span>
+						<span class="entry-1"> 2016</span>
 					</div>
 					<div class="suceess_story-content-container">
 						<figure class="suceess_story-content-featured-image">
@@ -370,9 +364,7 @@ $(document).ready(function(){
 					    </figure>
 						<div class="suceess_story-content-info">
 				        	<h4><a href="#">Avimanyu & Anindita</a></h4>
-				        	<p>We are giving thanks to odiajodi.com for it's corporation and services. Dec 2015
-								I was very confused and worried for choosing my life partner .when I got in to touch with its team ,it's changed my life.now we both are happy.thanks to odiajodi.com Feb 2016
-								We are both happy because of odiajodi.com.its service is genuine and reliable.Again thanks to the odiajodi team.
+				        	<p>We are both happy because of odiajodi.com.its service is genuine and reliable.Again thanks to the odiajodi team.
 								It gives the best services in odisha,that we realised.nice interface.
 								<a href="#">More...</a></p>				        	
 				        </div>
@@ -380,7 +372,7 @@ $(document).ready(function(){
 				</li>
 	            <li>
 				  	<div class="suceess_story-date">
-						<span class="entry-1">Dec 20, 2015</span>
+						<span class="entry-1">Nov, 2016</span>
 					</div>
 					<div class="suceess_story-content-container">
 						<figure class="suceess_story-content-featured-image">
@@ -388,10 +380,7 @@ $(document).ready(function(){
 					    </figure>
 						<div class="suceess_story-content-info">
 				        	<h4><a href="#">Pravudatta & Nirja</a></h4>	
-				        	<p>We are giving thanks to odiajodi.com for it's corporation and services. Dec 2015
-								I was very confused and worried for choosing my life partner .when I got in to touch with its team ,it's changed my life.now we both are happy.thanks to odiajodi.com Feb 2016
-								We are both happy because of odiajodi.com.its service is genuine and reliable.Again thanks to the odiajodi team.
-								It gives the best services in odisha,that we realised.nice interface.
+				        	<p>It gives the best services in odisha,that we realised.nice interface.
 								<a href="#">More...</a></p>			        	
 				        </div>
 				    </div>
@@ -406,10 +395,7 @@ $(document).ready(function(){
 					    </figure>
 						<div class="suceess_story-content-info">
 				        	<h4><a href="#">Subha & Manas</a></h4>
-				        	<p>We are giving thanks to odiajodi.com for it's corporation and services. Dec 2015
-								I was very confused and worried for choosing my life partner .when I got in to touch with its team ,it's changed my life.now we both are happy.thanks to odiajodi.com Feb 2016
-								We are both happy because of odiajodi.com.its service is genuine and reliable.Again thanks to the odiajodi team.
-								It gives the best services in odisha,that we realised.nice interface.
+				        	<p>Thanks Odiajodi team ..
 								<a href="#">More...</a></p>					        	
 				        </div>
 				    </div>
@@ -431,8 +417,8 @@ $(document).ready(function(){
 	        </ul>
 	    </div>
 	    <div class="col-md-4 row_1-right">
-	      <h3>News & Events</h3>
-	        <div class="box_1">
+	     <h3>News & Events</h3>
+	      <!--    <div class="box_1">
 		      <figure class="thumbnail1"><img width="170" height="155" src="images/14.jpg" class="img-responsive" alt=""/></figure>
 			  <div class="extra-wrap">
 				<div class="post-meta">
@@ -448,8 +434,8 @@ $(document).ready(function(){
 				<div class="post-content">The standard chunk of Lorem Ipsum used since the 1500s..</div>
 				<a href="#" class="vertical">Read More</a>
 			  </div>
-	        </div>
-	        <div class="box_1">
+	        </div> -->
+	       <!--  <div class="box_1">
 		      <figure class="thumbnail1"><img width="170" height="155" src="images/15.jpg" class="img-responsive" alt=""/></figure>
 			  <div class="extra-wrap">
 				<div class="post-meta">
@@ -482,7 +468,7 @@ $(document).ready(function(){
 				<div class="post-content">The standard chunk of Lorem Ipsum used since the 1500s..</div>
 				<a href="#" class="vertical">Read More</a>
 			  </div>
-	        </div>
+	        </div> -->
 	        <div class="religion">
                <div class="religion_1-title">Religion :</div>
 			   <a href="#" target="_blank" class="religion_1" title="Hindu Matrimonial" style="padding-left:0px !important;">Hindu</a>
@@ -494,12 +480,12 @@ $(document).ready(function(){
 	        <div class="religion">
                <div class="religion_1-title">Country :</div>
 			   <a href="#" target="_blank" class="religion_1" title="Hindu Matrimonial" style="padding-left:0px !important;">India</a>
-			    <span>|</span><a href="#" target="_blank" class="religion_1" title="Muslim Matrimonial">Australia</a>
+			    <!-- <span>|</span><a href="#" target="_blank" class="religion_1" title="Muslim Matrimonial">Australia</a>
 			 	<span>|</span><a href="#" target="_blank" class="religion_1" title="Christian Matrimonial">Russia</a>
 			 	<span>|</span><a href="#" target="_blank" class="religion_1" title="Sikh Matrimonial">India</a>
 			 	<span>|</span><a href="#" target="_blank" class="religion_1" title="Inter Religion Matrimonial">Kuwait</a>
 			 	<span>|</span><a href="#" target="_blank" class="religion_1" title="Inter Religion Matrimonial">Uk</a>
-			 	<span>|</span><a href="#" target="_blank" class="religion_1" title="Inter Religion Matrimonial">View All</a>
+			 	<span>|</span><a href="#" target="_blank" class="religion_1" title="Inter Religion Matrimonial">View All</a> -->
 	        </div>
 	        <div class="religion">
                <div class="religion_1-title">Caste :</div>

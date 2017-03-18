@@ -13,6 +13,7 @@
 <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
 <script src="../js/jquery.min.js"></script>
 <script src="../js/bootstrap.min.js"></script>
+<script src="../js/register.js"></script>
 <!-- Custom Theme files -->
 <link href="../css/style.css" rel='stylesheet' type='text/css' />
 <link href='//fonts.googleapis.com/css?family=Oswald:300,400,700' rel='stylesheet' type='text/css'>
@@ -33,6 +34,8 @@ $(document).ready(function(){
         }
     );
 });
+
+
 </script>
 </head>
 <body>
@@ -47,9 +50,9 @@ $(document).ready(function(){
 				<li class="green">
 				  <a href="#" class="icon-home"></a>
 				  <ul>
-					<li><a href="login">Login</a></li>
-					<li><a href="register/loadPage">Register</a></li>
-					<li><a href="index">Logout</a></li>
+					<li><a href='<c:url value="../login"/>'>Login</a></li>
+					<li><a href='<c:url value="register/loadPage"/>'>Register</a></li>
+					<li><a href='<c:url value="../index"/>'>Logout</a></li>
 				  </ul>
 				</li>
 			   </ul>
@@ -72,8 +75,8 @@ $(document).ready(function(){
 		   <!-- Collect the nav links, forms, and other content for toggling -->
 		    <div class="collapse navbar-collapse" id="bs-megadropdown-tabs">
 		        <ul class="nav navbar-nav nav_1">
-		            <li><a href="index">Home</a></li>
-		            <li><a href="about">About</a></li>
+		            <li><a href='<c:url value="../index"/>'>Home</a></li>
+		            <li><a href='<c:url value="../about"/>'>About</a></li>
 		    		<!-- <li class="dropdown">
 		              <a href="#" class="dropdown-toggle" data-toggle="dropdown">Matches<span class="caret"></span></a>
 		              <ul class="dropdown-menu" role="menu">
@@ -104,7 +107,7 @@ $(document).ready(function(){
 		                <li><a href="upgrade">Upgrade</a></li>
 		              </ul>
 		            </li> -->
-		            <li class="last"><a href="contact">Contacts</a></li>
+		            <li class="last"><a href='<c:url value="../contact"/>'>Contacts</a></li>
 		        </ul>
 		     </div><!-- /.navbar-collapse -->
 		    </nav>
@@ -117,6 +120,18 @@ $(document).ready(function(){
 <div class="grid_3">
   <div class="container">
    <div class="breadcrumb1">
+   	<ul>
+        <%String success=request.getParameter("success")!=null?(String)request.getParameter("success"):"Hi"; 
+        	
+        	if(success.equalsIgnoreCase("YES")){
+        %>
+        <%= success%>
+        <li class="current-page" color="green">Registeration Success</li>
+        <%
+        success="NO";
+        	}
+        %>
+     </ul>
      <ul>
         <a href="index"><i class="fa fa-home home_1"></i></a>
         <span class="divider">&nbsp;|&nbsp;</span>
@@ -125,9 +140,9 @@ $(document).ready(function(){
    </div>
    <div class="services">
    	  <div class="col-sm-6 login_left">
-	     <form action='<c:url value="/register/save"/>' method="post" enctype="multipart/form-data">
+	     <form action='<c:url value="/saveRegistration"/>' method="post" enctype="multipart/form-data">
 	     	<div class="form-group">
-		      <label for="edit-name">Profile For <span class="form-required" title="This field is required.">*</span></label>
+		      <label for="edit-name">Profile For <span class="form-required" title="This field is required." style="color:red">*</span></label>
                     <select class="form-text required" name="profileFor">
 	                    <option value="Myself">Myself</option>
 	                    <option value="Son">Son</option>
@@ -139,31 +154,31 @@ $(document).ready(function(){
                     </select>
 		    </div>
 	  	    <div class="form-group">
-		      <label for="edit-name">Name <span class="form-required" title="This field is required.">*</span></label>
-		      <input type="text" id="edit-name" name="name" value="" size="60" maxlength="60" class="form-text required">
+		      <label for="edit-name">Name <span class="form-required" title="This field is required." style="color:red">*</span></label>
+		      <input type="text" id="name" name="name" value="" size="60" maxlength="60" class="form-text required">
 		    </div>
 		    <div class="form-group">
-		      <label for="edit-name">Fathers Name <span class="form-required" title="This field is required.">*</span></label>
-		      <input type="text" id="edit-name" name="fatherName" value="" size="60" maxlength="60" class="form-text required">
+		      <label for="edit-name">Fathers Name <span class="form-required" title="This field is required."><!-- * --></span></label>
+		      <input type="text" id="fatherName" name="fatherName" value="" size="60" maxlength="60" class="form-text required">
 		    </div>
 		    <div class="form-group">
-		      <label for="edit-name">Email <span class="form-required" title="This field is required.">*</span></label>
-		      <input type="text" id="edit-name" name="email" value="" size="60" maxlength="60" class="form-text required">
+		      <label for="edit-name">Email <span class="form-required" title="This field is required." style="color:red">*</span></label>
+		      <input type="text" id="email" name="email" value="" size="60" maxlength="60" class="form-text required">
 		    </div>
 		     <div class="form-group">
-		      <label for="edit-name">Mobile Number<span class="form-required" title="This field is required.">*</span></label>
-		      <input type="text" id="edit-name" name="phone" value="" size="60" maxlength="60" class="form-text required">
+		      <label for="edit-name">Mobile Number<span class="form-required" title="This field is required." style="color:red">*</span></label>
+		      <input type="text" id="phone" name="phone" value="" size="60" maxlength="60" class="form-text required">
 		    </div>
 		     <div class="form-group">
-		      <label for="edit-name">Address<span class="form-required" title="This field is required.">*</span></label>
-		      <textarea class="form-control bio" placeholder="" rows="3" name="address"></textarea>
+		      <label for="edit-name">Address<span class="form-required" title="This field is required."><!-- * --></span></label>
+		      <textarea class="form-control bio" placeholder="" rows="3" name="address" id="address"></textarea>
 		    </div>
 		    <div class="age_select">
-		      <label for="edit-pass">DOB<span class="form-required" title="This field is required.">*</span></label>
+		      <label for="edit-pass">DOB<span class="form-required" title="This field is required."><!-- * --></span></label>
 		        <div class="age_grid">
 		         <div class="col-sm-4 form_box">
                   <div class="select-block1">
-                    <select name="dd">
+                    <select name="dd" id="dd">
 	                    <option value="">Date</option>
 	                    <option value="">1</option>
 	                    <option value="">2</option>
@@ -200,8 +215,8 @@ $(document).ready(function(){
                   </div>
             </div>
             <div class="col-sm-4 form_box2">
-                   <div class="select-block1" name="mm">
-                    <select>
+                   <div class="select-block1" >
+                    <select id="mm" name="mm">
 	                    <option value="">Month</option>
 	                    <option value="">January</option>
 	                    <option value="">February</option>
@@ -219,8 +234,8 @@ $(document).ready(function(){
                   </div>
                  </div>
                  <div class="col-sm-4 form_box1">
-                   <div class="select-block1" name="yy">
-                    <select>
+                   <div class="select-block1" >
+                    <select name="yy" id="yy">
 	                    <option value="">Year</option>
 	                    <option value="">1980</option>
 	                    <option value="">1981</option>
@@ -285,31 +300,31 @@ $(document).ready(function(){
 				 <textarea class="form-control bio" placeholder="" rows="3"></textarea>
 			  </div> -->
 			  <div class="form-group">
-		      <label for="edit-name">Height<span class="form-required" title="This field is required.">*</span></label>
+		      <label for="edit-name">Height<span class="form-required" title="This field is required."><!-- * --></span></label>
 		      <input type="text" id="edit-name" name="height" value="" size="60" maxlength="60" class="form-text required">
 		    </div>
 		     <div class="form-group">
-		      <label for="edit-name">Weight<span class="form-required" title="This field is required.">*</span></label>
+		      <label for="edit-name">Weight<span class="form-required" title="This field is required."><!-- * --></span></label>
 		      <input type="text" id="edit-name" name="weight" value="" size="60" maxlength="60" class="form-text required">
 		    </div>
 		     <div class="form-group">
-		      <label for="edit-name">Color<span class="form-required" title="This field is required.">*</span></label>
+		      <label for="edit-name">Color<span class="form-required" title="This field is required."><!-- * --></span></label>
 		      <input type="text" id="edit-name" name="color" value="" size="60" maxlength="60" class="form-text required">
 		    </div>
 		     <div class="form-group">
-		      <label for="edit-name">Hair Style<span class="form-required" title="This field is required.">*</span></label>
+		      <label for="edit-name">Hair Style<span class="form-required" title="This field is required."><!-- * --></span></label>
 		      <input type="text" id="edit-name" name="hairStyle" value="" size="60" maxlength="60" class="form-text required">
 		    </div>
 		     <div class="form-group">
-		      <label for="edit-name">Eye<span class="form-required" title="This field is required.">*</span></label>
+		      <label for="edit-name">Eye<span class="form-required" title="This field is required."><!-- * --></span></label>
 		      <input type="text" id="edit-name" name="eye" value="" size="60" maxlength="60" class="form-text required">
 		    </div>
 		     <div class="form-group">
-		      <label for="edit-name">Father/Mother Occupation<span class="form-required" title="This field is required.">*</span></label>
+		      <label for="edit-name">Father/Mother Occupation<span class="form-required" title="This field is required."><!-- * --></span></label>
 		      <input type="text" id="edit-name" name="parentOccupation" value="" size="60" maxlength="60" class="form-text required">
 		    </div>
 		     <div class="form-group">
-		      <label for="edit-name">Siblings and their marital status<span class="form-required" title="This field is required.">*</span></label>
+		      <label for="edit-name">Siblings and their marital status<span class="form-required" title="This field is required."><!-- * --></span></label>
 		      <input type="text" id="edit-name" name="sibling" value="" size="60" maxlength="60" class="form-text required">
 		    </div>
 		    <div class="form-group">
@@ -317,35 +332,35 @@ $(document).ready(function(){
 		      <input type="text" id="edit-name" name="qualification" value="" size="60" maxlength="60" class="form-text required">
 		    </div>
 		    <div class="form-group">
-		      <label for="edit-name">Occupation<span class="form-required" title="This field is required.">*</span></label>
+		      <label for="edit-name">Occupation<span class="form-required" title="This field is required."><!-- * --></span></label>
 		      <input type="text" id="edit-name" name="occupation" value="" size="60" maxlength="60" class="form-text required">
 		    </div>
 		    <div class="form-group">
-		      <label for="edit-name">Rasi/Nakshyatra<span class="form-required" title="This field is required.">*</span></label>
+		      <label for="edit-name">Rasi/Nakshyatra<span class="form-required" title="This field is required."><!-- * --></span></label>
 		      <input type="text" id="edit-name" name="rasiNakhetra" value="" size="60" maxlength="60" class="form-text required">
 		    </div>
 		    <div class="form-group">
-			     <label for="edit-name">About you <span class="form-required" title="This field is required.">*</span></label>
+			     <label for="edit-name">About you <span class="form-required" title="This field is required."><!-- * --></span></label>
 				 <textarea class="form-control bio" placeholder="" rows="3" name="aboutYou"></textarea>
 			  </div> 
 			  <div class="form-group">
-			     <label for="edit-name">What Type you searching for<span class="form-required" title="This field is required.">*</span></label>
+			     <label for="edit-name">What Type you searching for<span class="form-required" title="This field is required."><!-- * --></span></label>
 				 <textarea class="form-control bio" placeholder="" rows="3" name="typeSearching"></textarea>
 			  </div> 
 			  <div class="form-group">
-			     <label for="edit-name">Upload Jatak<span class="form-required" title="This field is required.">*</span></label>
+			     <label for="edit-name">Upload Jatak<span class="form-required" title="This field is required."><!-- * --></span></label>
 				 <input type="file" id="edit-name" name="jatak" value="" size="60" maxlength="60" class="form-text required">
 			  </div>
 			  <div class="form-group">
-			     <label for="edit-name">Upload Photo<span class="form-required" title="This field is required.">*</span></label>
+			     <label for="edit-name">Upload Photo<span class="form-required" title="This field is required."><!-- * --></span></label>
 				 <input type="file" id="edit-name" name="photo" value="" size="60" maxlength="60" class="form-text required">
 			  </div>
 			   <div class="form-group">
-			     <label for="edit-name">Upload Any Govt. ID Proof<span class="form-required" title="This field is required.">*</span></label>
+			     <label for="edit-name">Upload Any Govt. ID Proof<span class="form-required" title="This field is required."><!-- * --></span></label>
 				 <input type="file" id="edit-name" name="idProof" value="" size="60" maxlength="60" class="form-text required">
 			  </div>
 			  <div class="form-actions">
-			    <input type="submit" id="submit" name="submit" value="Submit" class="btn_1 submit">
+			    <input type="submit" id="submit" name="submit" value="Submit" class="btn_1 submit" onclick="validate()">
 			  </div>
 		 </form>
 	  </div>

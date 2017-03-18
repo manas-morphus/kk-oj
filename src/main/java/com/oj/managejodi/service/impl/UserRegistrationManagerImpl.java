@@ -1,5 +1,7 @@
 package com.oj.managejodi.service.impl;
 
+import java.util.List;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -11,5 +13,8 @@ public class UserRegistrationManagerImpl implements UserRegistrationManager {
 	private @Autowired UserRegistrationDao userRegistrationDao;
 	public UserRegistration saveUser(UserRegistration details)throws Exception{
 		return userRegistrationDao.saveUser(details);
+	}
+	public List<UserRegistration> loadAllMembers()throws Exception{
+		return userRegistrationDao.loadAllMembers();
 	}
 }
