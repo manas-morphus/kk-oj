@@ -161,7 +161,7 @@ $(document).ready(function(){
 				<p><!-- /.accordion-title -->
 				</p><div id="accordion3" class="jb-accordion-content collapse ">
 				<p>it is a postpaid method First register ,<br>pay after marriage.<br>
-	Registration:1000 <br>NOW PROMOTING OFFER(500)(LIMITED PREIOD ONLY)<br> After services :5000</p>
+	Registration:2000 <br>NOW PROMOTING OFFER(1000)(LIMITED PREIOD ONLY)<br> After services :5000</p>
 				</div>
 				<p><!-- /.collapse --></p>
 			</div>

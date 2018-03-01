@@ -140,6 +140,9 @@ $(document).ready(function(){
             <dd>
                 +91 98611 49501<br>
             </dd>
+            <dd>
+                +91 82770 74174<br>
+            </dd>
         </dl>
         <dl class="grid_4">
             <dt>E-mail :</dt>

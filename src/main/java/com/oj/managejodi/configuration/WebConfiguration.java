@@ -32,6 +32,7 @@ public class WebConfiguration extends WebMvcConfigurerAdapter{
 	/*set view without controller*/
 	@Override
 	public void addViewControllers(ViewControllerRegistry registry) {
+		registry.addViewController("/index").setViewName("index");
 		registry.addViewController("/login").setViewName("login");
 		registry.addViewController("/register/loadPage").setViewName("register");
 		registry.addViewController("/about").setViewName("about");

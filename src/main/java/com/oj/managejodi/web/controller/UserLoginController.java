@@ -7,6 +7,7 @@ import java.util.Set;
 
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import javax.servlet.http.HttpSession;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
@@ -24,12 +25,6 @@ import com.oj.managejodi.service.UserLoginManager;
 public class UserLoginController {
 	private @Autowired UserLoginManager userLoginManager;
 	private @Autowired UserProfileDetailsManager userDetailsManager;
-	@RequestMapping(value="/login" ,method=RequestMethod.GET)
-	public ModelAndView loginPageLoad()throws Exception{
-		ModelAndView model=new ModelAndView();
-			model.setViewName("login");
-		return model;
-	}
 	
 	@RequestMapping(value="/index" ,method=RequestMethod.GET)
 	public ModelAndView loadIndexPage(final HttpServletRequest request,final HttpServletResponse response)throws Exception{
@@ -37,6 +32,20 @@ public class UserLoginController {
 		model.setViewName("index");
 		return model;
 	}
+	@RequestMapping(value="/login" ,method=RequestMethod.GET)
+	public ModelAndView loginPageLoad(HttpServletRequest req)throws Exception{
+		ModelAndView model=new ModelAndView();
+		HttpSession session=req.getSession();
+		if(null==session.getAttribute("indexPage")){
+			session.setAttribute("indexPage", "loaded");
+			model.setViewName("index");
+		}else{
+			model.setViewName("login");
+		}
+					
+		return model;
+	}
+		
 	@RequestMapping(value="/validateUser" ,method=RequestMethod.POST)
 	public ModelAndView validateUser(final HttpServletRequest request,final HttpServletResponse response)throws Exception{
 		ModelAndView model=new ModelAndView();
