@@ -60,6 +60,7 @@ $(document).ready(function(){
              </nav>
            </div>
            <a class="brand" href="index"><img src='<c:url value="/images/logo-oj.gif"/>'  alt="logo"></a>
+           &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a title="By WhatsApp (Derivative of WhatsApp logo.svg) [Public domain], via Wikimedia Commons" ><b style="color:#fff;font-size:40px"><img width="40" alt="WhatsApp" src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/WhatsApp.svg/128px-WhatsApp.svg.png"/>&nbsp;82770 74174</b></a>
            <div class="pull-right">
           	<nav class="navbar nav_bottom" role="navigation">
             <!-- Brand and toggle get grouped for better mobile display -->
@@ -510,7 +511,7 @@ $(document).ready(function(){
 	   </div> 
 	  </div>
     </div>
-    <div class="bg">
+   <!--  <div class="bg">
 		<div class="container"> 
 			<h3>Guest Messages</h3>
 			<div class="heart-divider">
@@ -545,18 +546,16 @@ $(document).ready(function(){
             </div>
             <div class="clearfix"> </div>
 		</div>
-	</div>
+	</div> -->
 	
     <div class="footer">
     	<div class="container">
     		<div class="col-md-4 col_2">
-    			<h4>About Us</h4>
-    			<p>We are a small team ,which communicates between two perfect parties according
-	to their requirements.our match making services is started since 2010.it is absolute
-	offline mode.we have a number of energetic agents across all the districts of
-	odisha,who understand the client’s requirements ,then scans the entire database of
-	profiles. as soon as getting the perfect match the team will consult between two
-	parties.</p>
+    			<h1>About us</h1>
+   	  	<p>&ldquo; <b>Marriage Is Made In Heaven.It Is God Gifted.We Are Just An Interface.&rdquo;</b></p>
+   	  	<p>&ldquo; The world now is a smaller place, but the distance between two people is vast. Searching the perfect partner in these changing times is one of the most difficult things now-a-days. odiajodi.com is our endeavour to make it easier to find a match. 
+A wedding is not just the union of body, mind and soul but also an amalgamation of two families. Marriage is indeed holiness. With such values and notions, we bring a platform for people to meet and get them married.. The main purpose of this website is to assist their members anywhere, anytime .
+&rdquo;</p>
     		</div>
     		<div class="col-md-2 col_2">
     			<h4>Help & Support</h4>

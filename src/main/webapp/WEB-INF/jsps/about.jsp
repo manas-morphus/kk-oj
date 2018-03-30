@@ -59,6 +59,7 @@ $(document).ready(function(){
              </nav>
            </div>
            <a class="brand" href="index"><img src='<c:url value="/images/logo-oj.gif"/>' alt="logo"></a>
+           &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a title="By WhatsApp (Derivative of WhatsApp logo.svg) [Public domain], via Wikimedia Commons" ><b style="color:#fff;font-size:40px"><img width="40" alt="WhatsApp" src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/WhatsApp.svg/128px-WhatsApp.svg.png"/>&nbsp;82770 74174</b></a>
            <div class="pull-right">
           	<nav class="navbar nav_bottom" role="navigation">
  
@@ -128,40 +129,70 @@ $(document).ready(function(){
    </div>
    <div class="about">
    	  <div class="col-md-6 about_left">
-   	  	<img src="images/a3.jpg" class="img-responsive" alt=""/>
+   	  	<img src="images/odiajodimrg.jpg" class="img-responsive" alt=""/>
    	  </div>
    	  <div class="col-md-6 about_right">
    	  	<h1>About us</h1>
-   	  	<p>&ldquo; marriage is made in heaven.it is godgifted.we are just a interface.&rdquo;</p>
+   	  	<p>&ldquo; <b>Marriage Is Made In Heaven.It Is God Gifted.We Are Just An Interface.&rdquo;</b></p>
+   	  	<p>&ldquo; The world now is a smaller place, but the distance between two people is vast. Searching the perfect partner in these changing times is one of the most difficult things now-a-days. odiajodi.com is our endeavour to make it easier to find a match. 
+A wedding is not just the union of body, mind and soul but also an amalgamation of two families. Marriage is indeed holiness. With such values and notions, we bring a platform for people to meet and get them married.. The main purpose of this website is to assist their members anywhere, anytime .
+&rdquo;</p>
    	  	<div class="accordation">
 		   <div class="jb-accordion-wrapper">
 				<div class="jb-accordion-title">What we do:<button type="button" class="jb-accordion-button" data-toggle="collapse" data-target="#accordion-1-"><i class="fa fa-angle-down"> </i></button></div>
 				<p><!-- /.accordion-title -->
 				</p><div id="accordion-1-" class="jb-accordion-content collapse in" style="height: auto;">
-				<p>We are a small team ,which communicates between two perfect parties according
-	to their requirements.our match making services is started since 2010.it is absolute
-	offline mode.we have a number of energetic agents across all the districts of
-	odisha,who understand the client’s requirements ,then scans the entire database of
-	profiles. as soon as getting the perfect match the team will consult between two
-	parties.</p>
+				<p>We are a small team , which communicates between two perfect parties according to their requirements .Our match making services is started since 2010 .We have a number of energetic agents across all the districts of Odisha ,who understand the client’s requirements ,then scans the entire database of profiles. As soon as getting the perfect match the team will consult between two parties.</p>
 				</div>
 				<p><!-- /.collapse --></p>
 			</div>
 			<div class="jb-accordion-wrapper">
 				<div class="jb-accordion-title">Process:<button type="button" class="jb-accordion-button" data-toggle="collapse" data-target="#accordion2-"><i class="fa fa-angle-down"> </i></button></div>
 				<p><!-- /.accordion-title -->
+				<ul>
+					<li><b>Step 1</b> &ndash;  Registration  &ndash;&#40;By Client	&#41;</li>
+					<li><b>Step 2</b> &ndash; Verification & Approved  &ndash;&#40;By odiajodi.com Team	&#41;</li>
+					<li><b>Step 3</b> &ndash; Scanning & Consulting         &ndash;&#40;By odiajodi.com Team	&#41;</li>
+				</ul>
 				</p><div id="accordion2-" class="jb-accordion-content collapse ">
-				<p>Understanding the requierments&gt;scanning the databases &gt;match making
-	&gt;communicating between the parties </p>
+				<p>Note : If problem arises in registration then download information sheet from the website ,fill up it and send it  info@odiajodi.com along with photo and photo copy of id proof .   For more information call @ 08277074174. </p>
 				</div>
 				<p><!-- /.collapse --></p>
 			</div>
 			<div class="jb-accordion-wrapper">
 				<div class="jb-accordion-title">Fees:<button type="button" class="jb-accordion-button" data-toggle="collapse" data-target="#accordion3"><i class="fa fa-angle-down"> </i></button></div>
 				<p><!-- /.accordion-title -->
-				</p><div id="accordion3" class="jb-accordion-content collapse ">
-				<p>it is a postpaid method First register ,<br>pay after marriage.<br>
-	Registration:2000 <br>NOW PROMOTING OFFER(1000)(LIMITED PREIOD ONLY)<br> After services :5000</p>
+				<b>1&ndash; Silver Plan :2000 INR</b>
+				</p>
+				<div id="accordion3" class="jb-accordion-content collapse ">
+				<p>A &ndash; After taking a Premium membership , Client will be the active member until marriage.
+				 <br>B &ndash; A set of laminated mantra package with their respective Lord  & remedies of late     marriage will be provided through post .This services is completely free of cost worth  500 INR.
+				</p>
+				
+			
+				<p><!-- /.accordion-title -->
+								<b>2&ndash; Gold Plan  :3000 INR</b>
+								</p>
+								<p>A &ndash; After taking a Premium membership , Client will be the active member until marriage.
+								 <br>B &ndash; A set of laminated mantra package with their respective Lord  & remedies of late     marriage will be provided through post .This services is completely free of cost worth  500 INR.
+								 <br>C &ndash; The client will get a chance to meet or talk over phone to the renowned Astrologer of Odisha . This services is completely free of cost worth  1000 INR.
+				</p>
+				
+				<p><!-- /.accordion-title -->
+								<b>3&ndash; Dimond Plan :10000 INR</b>
+								</p>
+								<p>A &ndash; After taking a Premium membership , Client will be the active member until marriage.
+								 <br>B &ndash; A set of laminated mantra package with their respective Lord  & remedies of late     marriage will be provided through post .This services is completely free of cost worth  500 INR.
+								<br>C &ndash; The client will get a chance to meet or talk over phone to the renowned Astrologer of Odisha . This services is completely free of cost worth  1000 INR.
+								<br>D &ndash;  Free ad. in newspaper (2 times) & many more..
+								<br>E &ndash;  The team will take responsible of backgraound verification of the opposite party of registered client.
+				</p>
+				<p><!-- /.accordion-title -->
+								<b>Note : &ndash; </b>
+								</p>
+								<p>For any clarification about membership plan please call us<b> @ 08277074174</b> or write us<b> support@odiajodi.com.</b>
+								
+				</p>
 				</div>
 				<p><!-- /.collapse --></p>
 			</div>
@@ -171,7 +202,7 @@ $(document).ready(function(){
    </div>
   </div>
 </div>
-<div class="about_middle">
+<!-- <div class="about_middle">
 	<div class="container">
 	  <h2>Happy Clients</h2>
 	  <div class="about_middle-grid1">
@@ -225,8 +256,8 @@ $(document).ready(function(){
 		<div class="clearfix"> </div>
 	  </div>
 	</div>
-</div>
-<div class="about_bottom">
+</div> -->
+<!-- <div class="about_bottom">
 	<div class="container">
 		<h3>Team</h3>
 	   <div class="col-md-3 about_grid1">
@@ -303,20 +334,18 @@ $(document).ready(function(){
 	   </div>
 	   <div class="clearfix"> </div>
 	</div>
-</div>
+</div> -->
 <!-- <div class="map">
 	<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d3150859.767904157!2d-96.62081048651531!3d39.536794757966845!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sin!4v1408111832978"> </iframe>
 </div> -->
 <div class="footer">
     	<div class="container">
     		<div class="col-md-4 col_2">
-    			<h4>About Us</h4>
-    			<p>We are a small team ,which communicates between two perfect parties according
-	to their requirements.our match making services is started since 2010.it is absolute
-	offline mode.we have a number of energetic agents across all the districts of
-	odisha,who understand the client’s requirements ,then scans the entire database of
-	profiles. as soon as getting the perfect match the team will consult between two
-	parties.</p>
+    				<h1>About us</h1>
+   	  	<p>&ldquo; <b>Marriage Is Made In Heaven.It Is God Gifted.We Are Just An Interface.&rdquo;</b></p>
+   	  	<p>&ldquo; The world now is a smaller place, but the distance between two people is vast. Searching the perfect partner in these changing times is one of the most difficult things now-a-days. odiajodi.com is our endeavour to make it easier to find a match. 
+A wedding is not just the union of body, mind and soul but also an amalgamation of two families. Marriage is indeed holiness. With such values and notions, we bring a platform for people to meet and get them married.. The main purpose of this website is to assist their members anywhere, anytime .
+&rdquo;</p>
     		</div>
     		<div class="col-md-2 col_2">
     			<h4>Help & Support</h4>
